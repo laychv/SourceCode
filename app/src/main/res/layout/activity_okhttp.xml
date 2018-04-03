@@ -7,17 +7,22 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/okHttp"
+        android:id="@+id/btnSync"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OkHttp"
-        android:textAllCaps="false" />
+        android:text="同步请求" />
 
     <Button
-        android:id="@+id/eventBus"
+        android:id="@+id/btnAsync"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EventBus"
-        android:textAllCaps="false" />
+        android:text="异步请求" />
+
+    <TextView
+        android:id="@+id/tvContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="Hello World!" />
 
 </LinearLayout>
