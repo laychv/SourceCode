@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import cn.ju.sourcecode.eventBus.EventBusActivity
 import cn.ju.sourcecode.okHttp.OkHttpActivity
+import cn.ju.sourcecode.retrofit.RetrofitActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import java.io.File
@@ -28,7 +29,10 @@ class MainActivity : AppCompatActivity() {
         eventBus.setOnClickListener {
             startActivity(Intent(this, EventBusActivity::class.java))
         }
-
+        // Retrofit
+        retrofit.setOnClickListener {
+            startActivity(Intent(this, RetrofitActivity::class.java))
+        }
     }
 
 }
