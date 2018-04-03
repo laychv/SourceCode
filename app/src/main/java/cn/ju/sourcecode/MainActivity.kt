@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
+import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
@@ -22,10 +23,14 @@ class MainActivity : AppCompatActivity() {
         btnAsync.setOnClickListener {
             asyncRequest()
         }
+
     }
 
     // dispatcher 1.创建客户端
-    private val client = OkHttpClient.Builder().readTimeout(3, TimeUnit.SECONDS).build()
+    private val client = OkHttpClient.Builder()
+            .cache(Cache(File("file"), 24 * 1024 * 1024))// 缓存
+            .readTimeout(3, TimeUnit.SECONDS)
+            .build()
 
     // 2.创建同步请求 阻塞线程
     /**
@@ -33,6 +38,7 @@ class MainActivity : AppCompatActivity() {
      */
     private fun syncRequest() {
         val request = Request.Builder().url("http://baidu.com").get().build()
+//        request.header()
         // 3.创建桥梁
         val call = client.newCall(request)// Call 是接口，通过实现类realCall实现
         // 4.分水岭
@@ -53,7 +59,7 @@ class MainActivity : AppCompatActivity() {
 
             }
 
-            override fun onResponse(call: Call?, response: Response?) {//都在工作线程操作
+            override fun onResponse(call: Call?, response: Response?) {//都在工作线程操作 如果更新UI切换到主线程中
                 runOnUiThread {
                     tvContent.text = response?.body().toString()
                 }
