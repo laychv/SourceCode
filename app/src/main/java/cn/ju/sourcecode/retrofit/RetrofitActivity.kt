@@ -17,18 +17,22 @@ class RetrofitActivity : AppCompatActivity() {
 
     private fun initClick() {
         btnRetrofit.setOnClickListener {
+            // 4.
             val retrofit = Retrofit.Builder()
                     .baseUrl("https://api.github.com/")
                     .addConverterFactory(GsonConverterFactory.create())
                     .build()
 
+            // 5.
             val service = retrofit.create(GitHubService::class.java)
             val repos = service.listRepos("octocat")
+            // 6.
             repos.enqueue(object : retrofit2.Callback<List<Repo>> {
                 override fun onFailure(call: retrofit2.Call<List<Repo>>?, t: Throwable?) {
                 }
 
                 override fun onResponse(call: retrofit2.Call<List<Repo>>?, response: retrofit2.Response<List<Repo>>?) {
+                    // 7.
                     tvRetrofit.text = response.toString()
                 }
             })
