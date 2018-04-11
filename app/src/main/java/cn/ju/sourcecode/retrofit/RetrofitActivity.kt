@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity
 import cn.ju.sourcecode.R
 import kotlinx.android.synthetic.main.activity_retrofit.*
 import retrofit2.Retrofit
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitActivity : AppCompatActivity() {
@@ -19,8 +20,9 @@ class RetrofitActivity : AppCompatActivity() {
         btnRetrofit.setOnClickListener {
             // 4.
             val retrofit = Retrofit.Builder()
-                    .baseUrl("https://api.github.com/")
-                    .addConverterFactory(GsonConverterFactory.create())
+                    .baseUrl("https://api.github.com/")//设置网络url请求地址
+                    .addConverterFactory(GsonConverterFactory.create())// 设置数据解析器
+                    .addCallAdapterFactory(RxJava2CallAdapterFactory.create())// 支持RxJava平台
                     .build()
 
             // 5.
