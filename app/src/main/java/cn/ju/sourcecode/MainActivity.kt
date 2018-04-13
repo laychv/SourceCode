@@ -6,6 +6,7 @@ import android.os.Bundle
 import cn.ju.sourcecode.eventBus.EventBusActivity
 import cn.ju.sourcecode.okHttp.OkHttpActivity
 import cn.ju.sourcecode.retrofit.RetrofitActivity
+import cn.ju.sourcecode.rxjava.RxJavaActivity
 import kotlinx.android.synthetic.main.activity_main.*
 import okhttp3.*
 import java.io.File
@@ -32,6 +33,10 @@ class MainActivity : AppCompatActivity() {
         // Retrofit
         retrofit.setOnClickListener {
             startActivity(Intent(this, RetrofitActivity::class.java))
+        }
+        //RxJava
+        rxjava.setOnClickListener {
+            startActivity(Intent(this, RxJavaActivity::class.java))
         }
     }
 
