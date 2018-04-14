@@ -7,10 +7,17 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/okHttp"
+        android:id="@+id/glide"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="OkHttp"
+        android:text="Glide"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/picasso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Picasso"
         android:textAllCaps="false" />
 
     <Button
@@ -18,6 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="EventBus"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/okHttp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="OkHttp"
         android:textAllCaps="false" />
 
     <Button

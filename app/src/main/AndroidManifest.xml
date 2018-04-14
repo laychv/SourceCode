@@ -24,6 +24,8 @@
         <activity android:name=".okHttp.OkHttpActivity" />
         <activity android:name=".eventBus.EventBusActivity" />
         <activity android:name=".retrofit.RetrofitActivity" />
+        <activity android:name=".glide.GlideActivity" />
+        <activity android:name=".picasso.PicassoActivity" />
 
     </application>
 
