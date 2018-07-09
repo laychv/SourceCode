@@ -2,13 +2,18 @@ package cn.ju.sourcecode.retrofit
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import cn.ju.sourcecode.R
+import cn.ju.sourcecode.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_retrofit.*
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory
 
-class RetrofitActivity : AppCompatActivity() {
+class RetrofitActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +43,7 @@ class RetrofitActivity : AppCompatActivity() {
                     tvRetrofit.text = response.toString()
                 }
             })
+
         }
 
     }
