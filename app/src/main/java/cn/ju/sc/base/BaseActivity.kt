@@ -1,4 +1,4 @@
-package cn.ju.sourcecode.base
+package cn.ju.sc.base
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

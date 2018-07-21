@@ -1,10 +1,10 @@
-package cn.ju.sourcecode.retrofit
+package cn.ju.sc.retrofit
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import cn.ju.sourcecode.R
-import cn.ju.sourcecode.base.BaseActivity
+import cn.ju.sc.R
+import cn.ju.sc.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_retrofit.*
 import retrofit2.Call
 import retrofit2.Callback

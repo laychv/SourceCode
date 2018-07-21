@@ -1,15 +1,15 @@
-package cn.ju.sourcecode
+package cn.ju.sc
 
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import cn.ju.sourcecode.base.BaseActivity
-import cn.ju.sourcecode.eventBus.EventBusActivity
-import cn.ju.sourcecode.glide.GlideActivity
-import cn.ju.sourcecode.okHttp.OkHttpActivity
-import cn.ju.sourcecode.picasso.PicassoActivity
-import cn.ju.sourcecode.retrofit.RetrofitActivity
-import cn.ju.sourcecode.rxjava2.RxJava2Activity
+import cn.ju.sc.base.BaseActivity
+import cn.ju.sc.dagger2.Dagger2Activity
+import cn.ju.sc.eventBus.EventBusActivity
+import cn.ju.sc.glide.GlideActivity
+import cn.ju.sc.okHttp.OkHttpActivity
+import cn.ju.sc.picasso.PicassoActivity
+import cn.ju.sc.retrofit.RetrofitActivity
+import cn.ju.sc.rxjava2.RxJava2Activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : BaseActivity() {
@@ -45,6 +45,10 @@ class MainActivity : BaseActivity() {
         //RxJava
         rxjava2.setOnClickListener {
             startActivity(Intent(this, RxJava2Activity::class.java))
+        }
+        // Dagger2
+        dagger2.setOnClickListener {
+            startActivity(Intent(this, Dagger2Activity::class.java))
         }
     }
 

@@ -48,4 +48,11 @@
         android:text="RxJava2"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/dagger2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dagger2"
+        android:textAllCaps="false" />
+
 </LinearLayout>

@@ -1,4 +1,4 @@
-package cn.ju.sourcecode.rxjava2
+package cn.ju.sc.rxjava2
 
 import io.reactivex.Observable
 import io.reactivex.android.schedulers.AndroidSchedulers

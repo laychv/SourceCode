@@ -1,10 +1,11 @@
-package cn.ju.sourcecode.picasso
+package cn.ju.sc.picasso
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import cn.ju.sourcecode.R
+import cn.ju.sc.R
+import cn.ju.sc.base.BaseActivity
 
-class PicassoActivity:AppCompatActivity(){
+class PicassoActivity:BaseActivity(){
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_picasso)

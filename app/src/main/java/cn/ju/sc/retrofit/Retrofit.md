@@ -23,12 +23,15 @@
 * 8.用户在主线程处理返回结果
 
 
+
+## Retrofit中 设计模式
+
 #### 代理设计模式 [代理模式](https://blog.csdn.net/briblue/article/details/73928350)
 
 为其他对象提供一种代理，用以控制对这个对象的访问
 
-> 静态代理
-
+> 静态代理 ： 一个实现类对应一个代理类，一一对应关系
+举例：打官司
 
 > 动态代理 ： 代理类在程序运行时创建的代理方式
 优点：无侵入，增强方法
@@ -47,8 +50,9 @@ InvocationHandler
 * 动态代理类不需要手动生成，是在运行期间动态生成的
 
 
+#### 观察者模式
 
-## Retrofit 设置模式
+
 
 #### 工厂设计模式 factory
 
@@ -62,4 +66,13 @@ InvocationHandler
 * callAdapterFactories
 * callbackExecutor
 * validateEagerly
+
+#### 外观模式
+
+
+#### 策略模式
+
+
+#### 适配器模式
+
 

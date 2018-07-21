@@ -1,14 +1,15 @@
-package cn.ju.sourcecode.eventBus
+package cn.ju.sc.eventBus
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import cn.ju.sourcecode.R
+import cn.ju.sc.R
+import cn.ju.sc.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_event_bus.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe
 import org.greenrobot.eventbus.ThreadMode
 
-class EventBusActivity : AppCompatActivity() {
+class EventBusActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

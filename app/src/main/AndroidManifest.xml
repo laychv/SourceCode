@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="cn.ju.sourcecode">
+    package="cn.ju.sc">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -27,6 +27,7 @@
         <activity android:name=".glide.GlideActivity" />
         <activity android:name=".picasso.PicassoActivity" />
         <activity android:name=".rxjava2.RxJava2Activity" />
+        <activity android:name=".dagger2.Dagger2Activity" />
 
     </application>
 

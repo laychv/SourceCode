@@ -1,15 +1,16 @@
-package cn.ju.sourcecode.okHttp
+package cn.ju.sc.okHttp
 
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import cn.ju.sourcecode.R
+import cn.ju.sc.R
+import cn.ju.sc.base.BaseActivity
 import kotlinx.android.synthetic.main.activity_okhttp.*
 import okhttp3.*
 import java.io.File
 import java.io.IOException
 import java.util.concurrent.TimeUnit
 
-class OkHttpActivity : AppCompatActivity() {
+class OkHttpActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
