@@ -2,9 +2,7 @@ package cn.ju.sc.rxjava2
 
 import android.os.Bundle
 import android.os.SystemClock
-import android.support.v7.app.AppCompatActivity
 import android.util.Log
-import cn.ju.sc.MainActivity
 import cn.ju.sc.R
 import cn.ju.sc.base.BaseActivity
 import io.reactivex.Observable
