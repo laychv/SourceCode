@@ -1,14 +1,9 @@
 package cn.ju.sc.retrofit
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
-import android.util.Log
 import cn.ju.sc.R
-import cn.ju.sc.base.BaseActivity
+import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_retrofit.*
-import retrofit2.Call
-import retrofit2.Callback
-import retrofit2.Response
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory
 import retrofit2.converter.gson.GsonConverterFactory

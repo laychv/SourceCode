@@ -2,8 +2,7 @@ package cn.ju.sc.glide
 
 import android.os.Bundle
 import cn.ju.sc.R
-import cn.ju.sc.base.BaseActivity
-import com.bumptech.glide.Glide
+import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_glide.*
 
 class GlideActivity : BaseActivity() {

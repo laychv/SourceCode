@@ -1,9 +1,8 @@
 package cn.ju.sc.eventBus
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import cn.ju.sc.R
-import cn.ju.sc.base.BaseActivity
+import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_event_bus.*
 import org.greenrobot.eventbus.EventBus
 import org.greenrobot.eventbus.Subscribe

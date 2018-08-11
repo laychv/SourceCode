@@ -7,13 +7,14 @@
 
     <application
         android:allowBackup="false"
+        android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name=".MainActivity">
+        <activity android:name="cn.ju.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,6 +30,7 @@
         <activity android:name=".rxjava2.RxJava2Activity" />
         <activity android:name=".dagger2.Dagger2Activity" />
 
+        <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
     </application>
 
 </manifest>

@@ -1,4 +1,4 @@
-package cn.ju.sc.base
+package cn.ju.comm
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity

@@ -1,58 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context="cn.ju.MainActivity">
 
-    <Button
-        android:id="@+id/glide"
+    <FrameLayout
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <com.ashokvarma.bottomnavigation.BottomNavigationBar
+        android:id="@+id/bottom_navigation_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Glide"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/picasso"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Picasso"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/eventBus"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EventBus"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/okHttp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="OkHttp"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/retrofit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Retrofit"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/rxjava2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="RxJava2"
-        android:textAllCaps="false" />
-
-    <Button
-        android:id="@+id/dagger2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Dagger2"
-        android:textAllCaps="false" />
-
-</LinearLayout>
+        android:layout_gravity="bottom" />
+</FrameLayout>

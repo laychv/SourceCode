@@ -1,9 +1,8 @@
 package cn.ju.sc.okHttp
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import cn.ju.sc.R
-import cn.ju.sc.base.BaseActivity
+import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_okhttp.*
 import okhttp3.*
 import java.io.File

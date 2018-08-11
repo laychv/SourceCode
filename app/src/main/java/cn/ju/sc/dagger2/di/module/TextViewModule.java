@@ -1,4 +1,4 @@
-package cn.ju.sc.dagger2;
+package cn.ju.sc.dagger2.di.module;
 
 import android.content.Context;
 import android.widget.TextView;

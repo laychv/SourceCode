@@ -4,7 +4,7 @@ import android.os.Bundle
 import android.os.SystemClock
 import android.util.Log
 import cn.ju.sc.R
-import cn.ju.sc.base.BaseActivity
+import cn.ju.comm.BaseActivity
 import io.reactivex.Observable
 import io.reactivex.ObservableOnSubscribe
 import io.reactivex.Observer

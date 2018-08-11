@@ -1,5 +1,7 @@
-package cn.ju.sc.dagger2;
+package cn.ju.sc.dagger2.di.component;
 
+import cn.ju.sc.dagger2.Dagger2Activity;
+import cn.ju.sc.dagger2.di.module.TextViewModule;
 import dagger.Component;
 
 /**
