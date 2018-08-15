@@ -31,6 +31,8 @@
         <activity android:name=".dagger2.Dagger2Activity" />
 
         <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
+        <activity android:name="cn.ju.cv.lineChart.LineChartActivity" />
+
     </application>
 
 </manifest>

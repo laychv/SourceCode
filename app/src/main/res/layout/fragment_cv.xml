@@ -10,4 +10,9 @@
         android:layout_height="wrap_content"
         android:text="柱状图" />
 
+    <Button
+        android:id="@+id/lineChart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="折线图" />
 </LinearLayout>
