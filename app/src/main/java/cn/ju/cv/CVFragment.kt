@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import cn.ju.comm.BaseFragment
 import cn.ju.cv.barChart.BarChartActivity
+import cn.ju.cv.cureView.CureViewActivity
 import cn.ju.cv.lineChart.LineChartActivity
 import cn.ju.sc.R
 import kotlinx.android.synthetic.main.fragment_cv.*
@@ -16,14 +17,11 @@ class CVFragment : BaseFragment() {
 
     override fun initView(savedInstanceState: Bundle?) {
         // barChart
-        barChart.setOnClickListener {
-            startActivity(Intent(activity, BarChartActivity::class.java))
-        }
+        barChart.setOnClickListener { startActivity(Intent(activity, BarChartActivity::class.java)) }
         // lineChart
-        lineChart.setOnClickListener {
-            startActivity(Intent(activity, LineChartActivity::class.java))
-        }
-
+        lineChart.setOnClickListener { startActivity(Intent(activity, LineChartActivity::class.java)) }
+        // cureview
+        cureView.setOnClickListener { startActivity(Intent(activity, CureViewActivity::class.java)) }
     }
 
 }

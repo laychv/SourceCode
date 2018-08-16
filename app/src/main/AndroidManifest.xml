@@ -32,7 +32,7 @@
 
         <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
         <activity android:name="cn.ju.cv.lineChart.LineChartActivity" />
-
+        <activity android:name="cn.ju.cv.cureView.CureViewActivity" />
     </application>
 
 </manifest>

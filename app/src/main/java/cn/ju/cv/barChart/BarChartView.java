@@ -58,7 +58,7 @@ public class BarChartView extends View {
         // 柱状图下面文字
         mAxisPaint = new Paint();
         mAxisPaint.setAntiAlias(true);
-        mAxisPaint.setTextSize(20);
+        mAxisPaint.setTextSize(35f);
         mAxisPaint.setTextAlign(Paint.Align.CENTER);
         // 柱状图
         mBarPaint = new Paint();
@@ -239,6 +239,7 @@ public class BarChartView extends View {
             //绘制坐标文
             canvas.drawText(axi, textX, textY, mAxisPaint);
             if (i == mSelectedIndex) {
+                mBarPaint.setTextSize(35f);
                 mBarPaint.setColor(Color.RED);
                 float x = bar.left + mRadius;
                 float y = bar.top - mGap;

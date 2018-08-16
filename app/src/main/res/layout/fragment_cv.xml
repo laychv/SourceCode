@@ -15,4 +15,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="折线图" />
+
+    <Button
+        android:id="@+id/cureView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="曲线图" />
+
 </LinearLayout>
