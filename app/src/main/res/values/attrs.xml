@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--折线图属性-->
     <declare-styleable name="LineChartView">
         <!--线的颜色-->
         <attr name="line_color" format="color|reference" />
@@ -7,5 +8,12 @@
         <attr name="dot_normal_color" format="color|reference" />
         <!--点被按下或者选中的颜色-->
         <attr name="dot_selected_color" format="color|reference" />
+    </declare-styleable>
+    <!--验证码属性-->
+    <declare-styleable name="CodeView">
+        <attr name="count" format="integer"/>
+        <attr name="line_count" format="integer"/>
+        <attr name="font_size" format="dimension"/>
+        <attr name="code_color" format="color"/>
     </declare-styleable>
 </resources>
