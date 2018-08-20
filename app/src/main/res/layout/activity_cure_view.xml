@@ -4,5 +4,12 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
+    <cn.ju.cv.curveView.CurveView
+        android:id="@+id/curveView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp" />
 
 </LinearLayout>

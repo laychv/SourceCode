@@ -34,7 +34,7 @@
         <activity android:name="cn.ju.cv.lineChart.LineChartActivity" />
         <activity android:name="cn.ju.cv.cureView.CureViewActivity" />
         <activity android:name="cn.ju.cv.codeView.ActivityCodeView" />
-
+        <activity android:name="cn.ju.cv.curveView.CurveViewActivity" />
     </application>
 
 </manifest>
