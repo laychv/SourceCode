@@ -9,8 +9,11 @@ import cn.ju.sc.glide.GlideActivity
 import cn.ju.sc.okHttp.OkHttpActivity
 import cn.ju.sc.picasso.PicassoActivity
 import cn.ju.sc.retrofit.RetrofitActivity
-import cn.ju.sc.rxjava2.RxJava2Activity
+import cn.ju.sc.rx.rxbinding.ActivityRxBinding
+import cn.ju.sc.rx.rxjava2.RxJava2Activity
 import kotlinx.android.synthetic.main.fragment_sc.*
+import org.jetbrains.anko.sdk25.coroutines.onClick
+import org.jetbrains.anko.support.v4.startActivity
 
 class SCFragment : BaseFragment() {
 
@@ -40,8 +43,12 @@ class SCFragment : BaseFragment() {
             startActivity(Intent(activity, RetrofitActivity::class.java))
         }
         //RxJava
-        rxjava2.setOnClickListener {
+        rxjava2.onClick {
             startActivity(Intent(activity, RxJava2Activity::class.java))
+        }
+        // rxbinding
+        rxbinding.onClick {
+            startActivity<ActivityRxBinding>()
         }
         // Dagger2
         dagger2.setOnClickListener {

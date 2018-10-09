@@ -42,6 +42,13 @@
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/dagger2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dagger2"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/rxjava2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -49,10 +56,15 @@
         android:textAllCaps="false" />
 
     <Button
-        android:id="@+id/dagger2"
+        android:id="@+id/rxbinding"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Dagger2"
+        android:text="RxBinding"
         android:textAllCaps="false" />
+
+    <ExpandableListView
+        android:id="@+id/expandableListView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
 </LinearLayout>

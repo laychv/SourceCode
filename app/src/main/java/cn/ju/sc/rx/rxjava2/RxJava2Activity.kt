@@ -1,4 +1,4 @@
-package cn.ju.sc.rxjava2
+package cn.ju.sc.rx.rxjava2
 
 import android.os.Bundle
 import android.os.SystemClock

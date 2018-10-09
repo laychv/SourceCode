@@ -27,7 +27,7 @@
         <activity android:name=".retrofit.RetrofitActivity" />
         <activity android:name=".glide.GlideActivity" />
         <activity android:name=".picasso.PicassoActivity" />
-        <activity android:name=".rxjava2.RxJava2Activity" />
+        <activity android:name="cn.ju.sc.rx.rxjava2.RxJava2Activity" />
         <activity android:name=".dagger2.Dagger2Activity" />
         <!--CustomView-->
         <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
@@ -36,6 +36,7 @@
         <activity android:name="cn.ju.cv.curveView.CurveViewActivity" />
         <activity android:name="cn.ju.cv.gradientProgressView.ActivityGradientProgressView" />
         <activity android:name="cn.ju.cv.vg.ActivitySizeViewGroup" />
+        <activity android:name=".rx.rxbinding.ActivityRxBinding" />
 
     </application>
 
