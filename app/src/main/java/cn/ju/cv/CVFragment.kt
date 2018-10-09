@@ -6,7 +6,9 @@ import cn.ju.comm.BaseFragment
 import cn.ju.cv.barChart.BarChartActivity
 import cn.ju.cv.codeView.ActivityCodeView
 import cn.ju.cv.curveView.CurveViewActivity
+import cn.ju.cv.gradientProgressView.ActivityGradientProgressView
 import cn.ju.cv.lineChart.LineChartActivity
+import cn.ju.cv.vg.ActivitySizeViewGroup
 import cn.ju.sc.R
 import kotlinx.android.synthetic.main.fragment_cv.*
 
@@ -25,6 +27,8 @@ class CVFragment : BaseFragment() {
         cureView.setOnClickListener { startActivity(Intent(activity, CurveViewActivity::class.java)) }
         codeView.setOnClickListener { startActivity(Intent(activity, ActivityCodeView::class.java)) }
         cureView.setOnClickListener { startActivity(Intent(activity, CurveViewActivity::class.java)) }
+        sizeVG.setOnClickListener { startActivity(Intent(activity, ActivitySizeViewGroup::class.java)) }
+        progressView.setOnClickListener { startActivity(Intent(activity,ActivityGradientProgressView::class.java)) }
     }
 
 }

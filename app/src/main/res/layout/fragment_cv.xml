@@ -28,4 +28,15 @@
         android:layout_height="wrap_content"
         android:text="验证码" />
 
+    <Button
+        android:id="@+id/sizeVG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ViewGroup" />
+
+    <Button
+        android:id="@+id/progressView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="渐变圆弧进度条" />
 </LinearLayout>

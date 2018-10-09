@@ -29,12 +29,14 @@
         <activity android:name=".picasso.PicassoActivity" />
         <activity android:name=".rxjava2.RxJava2Activity" />
         <activity android:name=".dagger2.Dagger2Activity" />
-
+        <!--CustomView-->
         <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
         <activity android:name="cn.ju.cv.lineChart.LineChartActivity" />
-        <activity android:name="cn.ju.cv.cureView.CureViewActivity" />
         <activity android:name="cn.ju.cv.codeView.ActivityCodeView" />
         <activity android:name="cn.ju.cv.curveView.CurveViewActivity" />
+        <activity android:name="cn.ju.cv.gradientProgressView.ActivityGradientProgressView" />
+        <activity android:name="cn.ju.cv.vg.ActivitySizeViewGroup" />
+
     </application>
 
 </manifest>
