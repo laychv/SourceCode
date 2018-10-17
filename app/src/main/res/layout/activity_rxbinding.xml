@@ -1,12 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
     <android.support.v7.widget.AppCompatButton
         android:id="@+id/btnClick"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="clicks" />
-</LinearLayout>
+        android:enabled="true"
+        android:text="clicks"
+        android:textAllCaps="false" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btnLongClick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="longClicks"
+        android:textAllCaps="false"
+        app:layout_constraintStart_toEndOf="@id/btnClick" />
+
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/btnLongClick"
+        app:layout_constraintStart_toEndOf="@+id/btnLongClick"
+        app:layout_constraintTop_toTopOf="@id/btnLongClick" />
+
+    <TextView
+        android:id="@+id/tvCb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/checkbox"
+        app:layout_constraintStart_toEndOf="@id/checkbox"
+        app:layout_constraintTop_toTopOf="@id/checkbox" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etName"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="姓名"
+        app:layout_constraintTop_toBottomOf="@+id/btnClick" />
+
+    <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/etAge"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:hint="年纪"
+        app:layout_constraintBottom_toBottomOf="@id/etName"
+        app:layout_constraintStart_toEndOf="@id/etName"
+        app:layout_constraintTop_toTopOf="@id/etName" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:enabled="false"
+        android:text="提交"
+        app:layout_constraintBottom_toBottomOf="@id/etAge"
+        app:layout_constraintStart_toEndOf="@id/etAge"
+        app:layout_constraintTop_toTopOf="@+id/etAge" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btPermission"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="权限"
+        app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+
+</android.support.constraint.ConstraintLayout>

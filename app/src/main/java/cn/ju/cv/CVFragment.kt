@@ -8,9 +8,12 @@ import cn.ju.cv.codeView.ActivityCodeView
 import cn.ju.cv.curveView.CurveViewActivity
 import cn.ju.cv.gradientProgressView.ActivityGradientProgressView
 import cn.ju.cv.lineChart.LineChartActivity
+import cn.ju.cv.swipeCards.ActivitySwipeCards
 import cn.ju.cv.vg.ActivitySizeViewGroup
 import cn.ju.sc.R
 import kotlinx.android.synthetic.main.fragment_cv.*
+import org.jetbrains.anko.sdk25.coroutines.onClick
+import org.jetbrains.anko.support.v4.startActivity
 
 class CVFragment : BaseFragment() {
 
@@ -28,7 +31,12 @@ class CVFragment : BaseFragment() {
         codeView.setOnClickListener { startActivity(Intent(activity, ActivityCodeView::class.java)) }
         cureView.setOnClickListener { startActivity(Intent(activity, CurveViewActivity::class.java)) }
         sizeVG.setOnClickListener { startActivity(Intent(activity, ActivitySizeViewGroup::class.java)) }
-        progressView.setOnClickListener { startActivity(Intent(activity,ActivityGradientProgressView::class.java)) }
+        progressView.onClick {
+            startActivity<ActivityGradientProgressView>()
+        }
+        swipeCards.onClick {
+            startActivity<ActivitySwipeCards>()
+        }
     }
 
 }

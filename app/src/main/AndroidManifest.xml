@@ -4,6 +4,7 @@
     package="cn.ju.sc">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:allowBackup="false"
@@ -37,6 +38,7 @@
         <activity android:name="cn.ju.cv.gradientProgressView.ActivityGradientProgressView" />
         <activity android:name="cn.ju.cv.vg.ActivitySizeViewGroup" />
         <activity android:name=".rx.rxbinding.ActivityRxBinding" />
+        <activity android:name="cn.ju.cv.swipeCards.ActivitySwipeCards" />
 
     </application>
 

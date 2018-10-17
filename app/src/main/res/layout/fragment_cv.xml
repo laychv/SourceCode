@@ -39,4 +39,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="渐变圆弧进度条" />
+
+    <Button
+        android:id="@+id/swipeCards"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="卡片滑动切换" />
+
 </LinearLayout>
