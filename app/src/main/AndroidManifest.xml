@@ -39,6 +39,7 @@
         <activity android:name="cn.ju.cv.vg.ActivitySizeViewGroup" />
         <activity android:name=".rx.rxbinding.ActivityRxBinding" />
         <activity android:name="cn.ju.cv.swipeCards.ActivitySwipeCards" />
+        <activity android:name="cn.ju.cv.circlePageIndicator.ActivityCirclePageIndicator" />
 
     </application>
 

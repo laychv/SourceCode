@@ -4,6 +4,7 @@ import android.content.Intent
 import android.os.Bundle
 import cn.ju.comm.BaseFragment
 import cn.ju.cv.barChart.BarChartActivity
+import cn.ju.cv.circlePageIndicator.ActivityCirclePageIndicator
 import cn.ju.cv.codeView.ActivityCodeView
 import cn.ju.cv.curveView.CurveViewActivity
 import cn.ju.cv.gradientProgressView.ActivityGradientProgressView
@@ -36,6 +37,9 @@ class CVFragment : BaseFragment() {
         }
         swipeCards.onClick {
             startActivity<ActivitySwipeCards>()
+        }
+        circleIndicator.onClick {
+            startActivity<ActivityCirclePageIndicator>()
         }
     }
 
