@@ -1,7 +1,6 @@
 package cn.ju.sc
 
 import android.content.Intent
-import android.os.Bundle
 import cn.ju.comm.BaseFragment
 import cn.ju.sc.dagger2.Dagger2Activity
 import cn.ju.sc.eventBus.EventBusActivity
@@ -21,7 +20,7 @@ class SCFragment : BaseFragment() {
         return R.layout.fragment_sc
     }
 
-    override fun initView(savedInstanceState: Bundle?) {
+    override fun initView() {
         //Glide
         glide.setOnClickListener {
             startActivity(Intent(activity, GlideActivity::class.java))

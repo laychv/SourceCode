@@ -26,22 +26,19 @@ import io.reactivex.android.schedulers.AndroidSchedulers
  */
 class ActivityRxBinding : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rxbinding)
-        initView()
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_rxbinding
     }
 
-
     @SuppressLint("CheckResult")
-    private fun initView() {
+    override fun initView() {
 
         /**
          * 防止多次点击
          */
         val disposable = RxView.clicks(btnClick)
                 .throttleFirst(5, TimeUnit.SECONDS)
-                .subscribe { _ ->
+                .subscribe { it ->
                     toast("click")
                     Log.d("aa", "binding=======点击了按钮")
                 }
@@ -91,6 +88,7 @@ class ActivityRxBinding : BaseActivity() {
         RxView.clicks(btPermission)
                 .throttleFirst(1, TimeUnit.SECONDS)
                 .subscribeOn(AndroidSchedulers.mainThread())
+                .observeOn(Schedulers.io())
                 .compose(permissions.ensure(Manifest.permission.CAMERA))
                 .subscribe { aBoolean ->
                     if (aBoolean!!) {

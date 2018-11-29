@@ -1,6 +1,5 @@
 package cn.ju.sc.okHttp
 
-import android.os.Bundle
 import cn.ju.sc.R
 import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_okhttp.*
@@ -11,10 +10,11 @@ import java.util.concurrent.TimeUnit
 
 class OkHttpActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_okhttp)
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_okhttp
+    }
 
+    override fun initView() {
         // sync
         btnSync.setOnClickListener {
             syncRequest()

@@ -10,9 +10,16 @@ import org.greenrobot.eventbus.ThreadMode
 
 class EventBusActivity : BaseActivity() {
 
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_event_bus
+    }
+
+    override fun initView() {
+
+    }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_event_bus)
         EventBus.getDefault().register(this)//1. register
         initListener()
     }

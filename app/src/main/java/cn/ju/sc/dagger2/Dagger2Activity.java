@@ -1,10 +1,7 @@
 package cn.ju.sc.dagger2;
 
-import android.os.Bundle;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-
-import org.jetbrains.annotations.Nullable;
 
 import javax.inject.Inject;
 
@@ -17,24 +14,22 @@ public class Dagger2Activity extends BaseActivity {
 
     @Inject
     User mUser;
-
     @Inject
     TextView mTextView;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_dagger2);
+    public int getLayoutRes() {
+        return R.layout.activity_dagger2;
+    }
 
-//        DaggerMyComponent.builder().build().inject(this);
-//        Toast.makeText(this, mUser.name, Toast.LENGTH_LONG).show();
-
+    @Override
+    public void initView() {
         DaggerMyComponent.builder().textViewModule(new TextViewModule(this)).build().inject(this);
         FrameLayout frameLayout = findViewById(R.id.frame);
         mTextView.setText(mUser.name);
         frameLayout.addView(mTextView);
-
+//        DaggerMyComponent.builder().build().inject(this);
+//        Toast.makeText(this, mUser.name, Toast.LENGTH_LONG).show();
     }
-
 
 }

@@ -16,9 +16,11 @@ import io.reactivex.annotations.NonNull
 
 class RxJava2Activity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_rxjava)
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_rxjava
+    }
+
+    override fun initView() {
         initObservable()
         chainObservable()
 

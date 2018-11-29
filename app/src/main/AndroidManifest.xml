@@ -40,6 +40,9 @@
         <activity android:name=".rx.rxbinding.ActivityRxBinding" />
         <activity android:name="cn.ju.cv.swipeCards.ActivitySwipeCards" />
         <activity android:name="cn.ju.cv.circlePageIndicator.ActivityCirclePageIndicator" />
+        <activity android:name="cn.ju.book.chapter2.ViewAnimationXML" />
+        <activity android:name="cn.ju.book.chapter2.ViewAnimationJAVA" />
+
 
     </application>
 

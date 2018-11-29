@@ -1,6 +1,5 @@
 package cn.ju.cv.circlePageIndicator
 
-import android.os.Bundle
 import android.support.v4.view.PagerAdapter
 import android.view.View
 import android.view.ViewGroup
@@ -13,14 +12,11 @@ class ActivityCirclePageIndicator : BaseActivity() {
 
     private val mDataList = intArrayOf(R.drawable.lao, R.drawable.si, R.drawable.ji, R.drawable.dai, R.drawable.dai, R.drawable.wo)
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cpi)
-
-        initView()
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_cpi
     }
 
-    private fun initView() {
+    override fun initView() {
         viewPager.adapter = mPagerAdapter
         circlePageIndicator.setViewPager(viewPager)
     }

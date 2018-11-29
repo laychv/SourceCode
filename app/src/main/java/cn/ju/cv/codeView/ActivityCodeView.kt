@@ -10,13 +10,11 @@ import android.widget.Toast
 
 class ActivityCodeView : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_code_view)
-        init()
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_code_view
     }
 
-    private fun init() {
+    override fun initView() {
 
     }
 

@@ -22,7 +22,7 @@ class CVFragment : BaseFragment() {
         return R.layout.fragment_cv
     }
 
-    override fun initView(savedInstanceState: Bundle?) {
+    override fun initView() {
         // barChart
         barChart.setOnClickListener { startActivity(Intent(activity, BarChartActivity::class.java)) }
         // lineChart

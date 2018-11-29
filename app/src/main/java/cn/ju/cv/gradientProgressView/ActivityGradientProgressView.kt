@@ -1,6 +1,5 @@
 package cn.ju.cv.gradientProgressView
 
-import android.os.Bundle
 import cn.ju.comm.BaseActivity
 import cn.ju.sc.R
 import kotlinx.android.synthetic.main.activity_gradient_progress_view.*
@@ -10,10 +9,11 @@ import kotlinx.android.synthetic.main.activity_gradient_progress_view.*
  */
 class ActivityGradientProgressView : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_gradient_progress_view)
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_gradient_progress_view
+    }
 
+    override fun initView() {
         startAnimation.setOnClickListener {
             progress.startAnimation(100)
         }

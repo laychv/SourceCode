@@ -1,6 +1,5 @@
 package cn.ju.sc.retrofit
 
-import android.os.Bundle
 import cn.ju.sc.R
 import cn.ju.comm.BaseActivity
 import kotlinx.android.synthetic.main.activity_retrofit.*
@@ -10,9 +9,11 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 class RetrofitActivity : BaseActivity() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_retrofit)
+    override fun getLayoutRes(): Int {
+        return R.layout.activity_retrofit
+    }
+
+    override fun initView() {
         initClick()
     }
 
