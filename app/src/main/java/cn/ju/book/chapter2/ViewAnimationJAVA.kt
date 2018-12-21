@@ -1,7 +1,7 @@
 package cn.ju.book.chapter2
 
 import cn.ju.comm.BaseActivity
-import cn.ju.sc.R
+import cn.ju.openProject.R
 
 class ViewAnimationJAVA : BaseActivity() {
 

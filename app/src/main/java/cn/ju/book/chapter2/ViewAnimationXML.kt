@@ -3,7 +3,7 @@ package cn.ju.book.chapter2
 import android.view.animation.AnimationUtils
 import cn.ju.comm.BaseActivity
 import cn.ju.comm.onClick
-import cn.ju.sc.R
+import cn.ju.openProject.R
 import kotlinx.android.synthetic.main.activity_view_animation_xml.*
 
 class ViewAnimationXML : BaseActivity() {

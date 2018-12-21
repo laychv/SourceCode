@@ -62,6 +62,13 @@
         android:text="RxBinding"
         android:textAllCaps="false" />
 
+    <Button
+        android:id="@+id/kotlin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="kotlin"
+        android:textAllCaps="false" />
+
     <ExpandableListView
         android:id="@+id/expandableListView"
         android:layout_width="wrap_content"

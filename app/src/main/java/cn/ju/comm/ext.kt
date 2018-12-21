@@ -2,7 +2,7 @@ package cn.ju.comm
 
 import android.util.Log
 import android.view.View
-import cn.ju.sc.BuildConfig
+import cn.ju.openProject.BuildConfig
 
 fun View.onClick(method: () -> Unit) {
     this.setOnClickListener { method() }

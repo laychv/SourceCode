@@ -1,14 +1,13 @@
 package cn.ju
 
-import android.os.Bundle
 import android.support.annotation.IntRange
 import android.support.v4.app.Fragment
 import cn.ju.book.BookFragment
-import cn.ju.sc.R
+import cn.ju.openProject.R
 import cn.ju.comm.BaseActivity
 import cn.ju.comm.FragmentUtils
-import cn.ju.cv.CVFragment
-import cn.ju.sc.SCFragment
+import cn.ju.customView.CVFragment
+import cn.ju.openProject.SCFragment
 import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ashokvarma.bottomnavigation.BottomNavigationItem
 import kotlinx.android.synthetic.main.activity_main.*

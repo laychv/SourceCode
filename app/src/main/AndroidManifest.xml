@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="cn.ju.sc">
+    package="cn.ju.openProject">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -23,26 +23,27 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".okHttp.OkHttpActivity" />
-        <activity android:name=".eventBus.EventBusActivity" />
-        <activity android:name=".retrofit.RetrofitActivity" />
-        <activity android:name=".glide.GlideActivity" />
-        <activity android:name=".picasso.PicassoActivity" />
-        <activity android:name="cn.ju.sc.rx.rxjava2.RxJava2Activity" />
-        <activity android:name=".dagger2.Dagger2Activity" />
+        <activity android:name="cn.ju.openProject.okHttp.OkHttpActivity" />
+        <activity android:name="cn.ju.openProject.eventBus.EventBusActivity" />
+        <activity android:name="cn.ju.openProject.retrofit.RetrofitActivity" />
+        <activity android:name="cn.ju.openProject.glide.GlideActivity" />
+        <activity android:name="cn.ju.openProject.picasso.PicassoActivity" />
+        <activity android:name="cn.ju.openProject.rx.rxjava2.RxJava2Activity" />
+        <activity android:name="cn.ju.openProject.dagger2.Dagger2Activity" />
         <!--CustomView-->
-        <activity android:name="cn.ju.cv.barChart.BarChartActivity" />
-        <activity android:name="cn.ju.cv.lineChart.LineChartActivity" />
-        <activity android:name="cn.ju.cv.codeView.ActivityCodeView" />
-        <activity android:name="cn.ju.cv.curveView.CurveViewActivity" />
-        <activity android:name="cn.ju.cv.gradientProgressView.ActivityGradientProgressView" />
-        <activity android:name="cn.ju.cv.vg.ActivitySizeViewGroup" />
-        <activity android:name=".rx.rxbinding.ActivityRxBinding" />
-        <activity android:name="cn.ju.cv.swipeCards.ActivitySwipeCards" />
-        <activity android:name="cn.ju.cv.circlePageIndicator.ActivityCirclePageIndicator" />
+        <activity android:name="cn.ju.customView.barChart.BarChartActivity" />
+        <activity android:name="cn.ju.customView.lineChart.LineChartActivity" />
+        <activity android:name="cn.ju.customView.codeView.ActivityCodeView" />
+        <activity android:name="cn.ju.customView.curveView.CurveViewActivity" />
+        <activity android:name="cn.ju.customView.gradientProgressView.ActivityGradientProgressView" />
+        <activity android:name="cn.ju.customView.vg.ActivitySizeViewGroup" />
+        <activity android:name="cn.ju.openProject.rx.rxbinding.ActivityRxBinding" />
+        <activity android:name="cn.ju.customView.swipeCards.ActivitySwipeCards" />
+        <activity android:name="cn.ju.customView.circlePageIndicator.ActivityCirclePageIndicator" />
         <activity android:name="cn.ju.book.chapter2.ViewAnimationXML" />
         <activity android:name="cn.ju.book.chapter2.ViewAnimationJAVA" />
-
+        <activity android:name="cn.ju.kotlin.KotlinActivity" />
+        <activity android:name="cn.ju.customView.focusView.ActivityFocusView" />
 
     </application>
 

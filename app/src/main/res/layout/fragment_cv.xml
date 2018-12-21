@@ -51,4 +51,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="圆形指示器" />
+
+    <Button
+        android:id="@+id/btnFocusView"
+        android:text="聚焦框"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 </LinearLayout>
