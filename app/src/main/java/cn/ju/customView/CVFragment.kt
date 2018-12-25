@@ -13,6 +13,7 @@ import cn.ju.customView.lineChart.LineChartActivity
 import cn.ju.customView.swipeCards.ActivitySwipeCards
 import cn.ju.customView.vg.ActivitySizeViewGroup
 import cn.ju.openProject.R
+import cn.ju.viewConflict.SlideConflictActivity
 import kotlinx.android.synthetic.main.fragment_cv.*
 import org.jetbrains.anko.support.v4.startActivity
 
@@ -43,6 +44,9 @@ class CVFragment : BaseFragment() {
         }
         btnFocusView.onClick {
             startActivity<ActivityFocusView>()
+        }
+        btnConflict.onClick {
+            startActivity<SlideConflictActivity>()
         }
     }
 

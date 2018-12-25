@@ -54,7 +54,14 @@
 
     <Button
         android:id="@+id/btnFocusView"
-        android:text="聚焦框"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="聚焦框" />
+
+    <Button
+        android:id="@+id/btnConflict"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="滑动冲突" />
+
 </LinearLayout>

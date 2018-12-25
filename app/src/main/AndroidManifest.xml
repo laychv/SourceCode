@@ -44,6 +44,7 @@
         <activity android:name="cn.ju.book.chapter2.ViewAnimationJAVA" />
         <activity android:name="cn.ju.kotlin.KotlinActivity" />
         <activity android:name="cn.ju.customView.focusView.ActivityFocusView" />
+        <activity android:name="cn.ju.viewConflict.SlideConflictActivity" />
 
     </application>
 
