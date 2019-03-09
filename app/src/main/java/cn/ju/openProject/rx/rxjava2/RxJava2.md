@@ -35,13 +35,22 @@ RxJava2四要素
 线程控制符
 ----------------------------
 
-- subscribeOn(Schedulers.io())
-> 可以调用一次 (通过Observable方式创建)
+- subscribeOn(Schedulers.io()) 被观察者的线程切换
+> 可以调用一次，就是第一次起作用 (通过Observable方式创建)
 
-- observeOn(AndroidSchedulers.mainThread())
+- observeOn(AndroidSchedulers.mainThread()) 观察者的线程切换
 > 可以调用数次
 
 - subscribe()
 >
 
 所谓背压，即生产者的速度大于消费者的速度带来的问题，比如在Android中常见的点击事件，点击过快则经常会造成点击两次的效果。
+RxJava 1.x RxJava 2.x 区别？
+>
+    RxJava 1.x
+    Observable --> Observer 不支持背压
+    Observable --> Subscriber 支持背压
+
+    RxJava 2.x
+    Observable --> Observer 不支持背压
+    Flowable   --> Subscribe 支持背压
