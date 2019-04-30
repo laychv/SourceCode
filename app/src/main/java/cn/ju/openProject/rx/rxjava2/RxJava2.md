@@ -15,6 +15,14 @@ RxJava2四要素
 > * subscribe  订阅
 > * 事件
 
+创建被观察者
+Observable.just()
+Observable.from()
+Observable.create()
+Observable.fromArray()
+
+创建观察者
+
 入手
 ----------------------------
 - Observable.create
@@ -22,10 +30,11 @@ RxJava2四要素
 操作符
 ----------------------------
 - 区别:
-> - map：操作符的作用就是将Observable所发送送的信息进行格式转换或者处理,然后转变为另外一个类型，发送给Observer 
-> - 事件一一对应，映射成新的事件
+> - map：操作符的作用就是将Observable所发送送的信息进行格式转换或者处理,然后转变为另外一个类型，发送给Observer 事件一一对应，映射成新的事件
 > - flatMap：变换操作符，使用一个指定的函数对原始Observable发射的每一项数据执行变换操作，这个函数返回一个本身也发射数据的Observable，然后flatMap合并这些Observable发射的数据，最后将合并后的结果当作它自己的数据序列发射。
 > - 将所有的事件转换为Observable,通过Observable进行事件分发
+> - filter: 排除，过滤操作符。
+>
 
 线程控制
 ----------------------------
