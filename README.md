@@ -6,5 +6,5 @@
 # BlockCanary
 # [EventBus](https://github.com/assess15/SourceCode/blob/master/app/src/main/java/cn/ju/openProject/eventBus/EventBus.md)
 # [Dagger2](https://github.com/assess15/SourceCode/blob/master/app/src/main/java/cn/ju/openProject/dagger2/Dagger2.md)
-# RxJava2
+# [RxJava2](https://github.com/assess15/SourceCode/blob/master/app/src/main/java/cn/ju/openProject/rx/rxjava2/RxJava2.md)
 # Picasso
