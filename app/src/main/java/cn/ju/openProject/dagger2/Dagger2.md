@@ -13,11 +13,16 @@ Dagger2作用：通过编译时注解的方式，帮助我们自动生成创建�
 
 
 上手流程
+在Kotlin中使用
 - 激活插件
 apply plugin: 'kotlin-kapt'
 - 添加依赖
 api "com.google.dagger:dagger:$dagger_version"
 kapt "com.google.dagger:dagger-compiler:$dagger_version"
+
+在Java中使用
+annotationProcessor 'com.google.dagger:dagger-compiler:2.14.1'
+implementation 'com.google.dagger:dagger:2.16'
 
 kapt作用：根据注解预先生成代码
 
