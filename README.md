@@ -5,6 +5,6 @@
 # ButterKnife
 # BlockCanary
 # EventBus
-# Dagger2
+# [Dagger2](https://github.com/assess15/SourceCode/blob/master/app/src/main/java/cn/ju/openProject/dagger2/Dagger2.md)
 # RxJava
 # Picasso
