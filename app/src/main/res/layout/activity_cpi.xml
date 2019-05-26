@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="180dp" />
 
-    <cn.ju.customView.circlePageIndicator.CirclePageIndicator
+    <com.assess15.customView.circlePageIndicator.CirclePageIndicator
         android:id="@+id/circlePageIndicator"
         android:layout_width="200dp"
         android:layout_height="20dp"

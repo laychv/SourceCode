@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <cn.ju.customView.codeView.CodeView
+    <com.assess15.customView.codeView.CodeView
         android:id="@+id/code"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

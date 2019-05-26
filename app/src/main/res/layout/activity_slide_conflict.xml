@@ -18,7 +18,7 @@ requestDisallowInterceptTouchEvent(boolean disallowIntercept)，这个方法可�
        以下处理滑动冲突的方案都是在子View的OnTouchListener里面进行处理，并没有去复写控件的点击事件处理过程，在使用中还是比较方便的。"
             android:textSize="30sp" />
 
-        <cn.ju.viewConflict.MoveImage
+        <com.assess15.viewConflict.MoveImage
             android:id="@+id/ivConflict"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

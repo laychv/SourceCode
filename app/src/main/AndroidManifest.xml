@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="cn.ju.openProject">
+    package="com.assess15.openProject">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
@@ -15,7 +15,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="cn.ju.MainActivity">
+        <activity android:name="com.assess15.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,28 +23,28 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="cn.ju.openProject.okHttp.OkHttpActivity" />
-        <activity android:name="cn.ju.openProject.eventBus.EventBusActivity" />
-        <activity android:name="cn.ju.openProject.retrofit.RetrofitActivity" />
-        <activity android:name="cn.ju.openProject.glide.GlideActivity" />
-        <activity android:name="cn.ju.openProject.picasso.PicassoActivity" />
-        <activity android:name="cn.ju.openProject.rx.rxjava2.RxJava2Activity" />
-        <activity android:name="cn.ju.openProject.dagger2.Dagger2Activity" />
+        <activity android:name="com.assess15.openProjects.okHttp.OkHttpActivity" />
+        <activity android:name="com.assess15.openProjects.eventBus.EventBusActivity" />
+        <activity android:name="com.assess15.openProjects.retrofit.RetrofitActivity" />
+        <activity android:name="com.assess15.openProjects.glide.GlideActivity" />
+        <activity android:name="com.assess15.openProjects.picasso.PicassoActivity" />
+        <activity android:name="com.assess15.openProjects.rx.rxjava2.RxJava2Activity" />
+        <activity android:name="com.assess15.openProjects.dagger2.Dagger2Activity" />
         <!--CustomView-->
-        <activity android:name="cn.ju.customView.barChart.BarChartActivity" />
-        <activity android:name="cn.ju.customView.lineChart.LineChartActivity" />
-        <activity android:name="cn.ju.customView.codeView.ActivityCodeView" />
-        <activity android:name="cn.ju.customView.curveView.CurveViewActivity" />
-        <activity android:name="cn.ju.customView.gradientProgressView.ActivityGradientProgressView" />
-        <activity android:name="cn.ju.customView.vg.ActivitySizeViewGroup" />
-        <activity android:name="cn.ju.openProject.rx.rxbinding.ActivityRxBinding" />
-        <activity android:name="cn.ju.customView.swipeCards.ActivitySwipeCards" />
-        <activity android:name="cn.ju.customView.circlePageIndicator.ActivityCirclePageIndicator" />
-        <activity android:name="cn.ju.book.chapter2.ViewAnimationXML" />
-        <activity android:name="cn.ju.book.chapter2.ViewAnimationJAVA" />
-        <activity android:name="cn.ju.kotlin.KotlinActivity" />
-        <activity android:name="cn.ju.customView.focusView.ActivityFocusView" />
-        <activity android:name="cn.ju.viewConflict.SlideConflictActivity" />
+        <activity android:name="com.assess15.customView.barChart.BarChartActivity" />
+        <activity android:name="com.assess15.customView.lineChart.LineChartActivity" />
+        <activity android:name="com.assess15.customView.codeView.ActivityCodeView" />
+        <activity android:name="com.assess15.customView.curveView.CurveViewActivity" />
+        <activity android:name="com.assess15.customView.gradientProgressView.ActivityGradientProgressView" />
+        <activity android:name="com.assess15.customView.vg.ActivitySizeViewGroup" />
+        <activity android:name="com.assess15.openProjects.rx.rxbinding.ActivityRxBinding" />
+        <activity android:name="com.assess15.customView.swipeCards.ActivitySwipeCards" />
+        <activity android:name="com.assess15.customView.circlePageIndicator.ActivityCirclePageIndicator" />
+        <activity android:name="com.assess15.book.chapter2.ViewAnimationXML" />
+        <activity android:name="com.assess15.book.chapter2.ViewAnimationJAVA" />
+        <activity android:name="com.assess15.kotlin.KotlinActivity" />
+        <activity android:name="com.assess15.customView.focusView.ActivityFocusView" />
+        <activity android:name="com.assess15.viewConflict.SlideConflictActivity" />
 
     </application>
 

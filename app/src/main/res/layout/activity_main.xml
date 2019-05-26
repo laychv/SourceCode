@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="cn.ju.MainActivity">
+    tools:context="com.assess15.MainActivity">
 
     <FrameLayout
         android:id="@+id/content"

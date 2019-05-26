@@ -5,7 +5,7 @@
     android:gravity="center"
     android:orientation="vertical">
 
-    <cn.ju.customView.vg.SizeViewGroup
+    <com.assess15.customView.vg.SizeViewGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 </LinearLayout>
