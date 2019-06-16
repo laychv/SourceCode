@@ -11,4 +11,5 @@
 > api "com.trello.rxlifecycle2:rxlifecycle-components:2.2.2"
 > api "com.trello.rxlifecycle2:rxlifecycle-kotlin:2.2.2"
 
-
+缺点：代码侵入性太强
+- 必须要继承RxLifecycle中的RxActivity,RxFragment
