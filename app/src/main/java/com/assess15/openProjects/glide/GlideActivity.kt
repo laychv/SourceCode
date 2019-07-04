@@ -2,7 +2,6 @@ package com.assess15.openProjects.glide
 
 import com.assess15.openProject.R
 import com.assess15.comm.BaseActivity
-import com.assess15.openprojects.glide.loadImageSimple
 import kotlinx.android.synthetic.main.activity_glide.*
 
 class GlideActivity : BaseActivity() {

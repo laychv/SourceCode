@@ -5,6 +5,7 @@ import android.annotation.SuppressLint
 import android.text.TextUtils
 import android.util.Log
 import com.assess15.comm.BaseActivity
+import com.assess15.comm.onClick
 import com.assess15.openProject.R
 import com.jakewharton.rxbinding2.view.RxView
 import com.jakewharton.rxbinding2.widget.RxCompoundButton
@@ -15,7 +16,6 @@ import io.reactivex.schedulers.Schedulers
 import kotlinx.android.synthetic.main.activity_rxbinding.*
 import org.jetbrains.anko.toast
 import java.util.concurrent.TimeUnit
-import org.jetbrains.anko.sdk25.coroutines.onClick
 import com.tbruyelle.rxpermissions2.RxPermissions
 import io.reactivex.android.schedulers.AndroidSchedulers
 

@@ -15,7 +15,7 @@ import com.assess15.customView.vg.ActivitySizeViewGroup
 import com.assess15.openProject.R
 import com.assess15.viewConflict.SlideConflictActivity
 import kotlinx.android.synthetic.main.fragment_cv.*
-import org.jetbrains.anko.support.v4.startActivity
+import org.jetbrains.anko.startActivity
 
 class CVFragment : BaseFragment() {
 
@@ -26,27 +26,27 @@ class CVFragment : BaseFragment() {
     override fun initView() {
         // barChart
         barChart.setOnClickListener { startActivity(Intent(activity, BarChartActivity::class.java)) }
-        // lineChart
+        lineChart
         lineChart.setOnClickListener { startActivity(Intent(activity, LineChartActivity::class.java)) }
-        // cureview
+//         cureview
         cureView.setOnClickListener { startActivity(Intent(activity, CurveViewActivity::class.java)) }
         codeView.setOnClickListener { startActivity(Intent(activity, ActivityCodeView::class.java)) }
         cureView.setOnClickListener { startActivity(Intent(activity, CurveViewActivity::class.java)) }
         sizeVG.setOnClickListener { startActivity(Intent(activity, ActivitySizeViewGroup::class.java)) }
         progressView.onClick {
-            startActivity<ActivityGradientProgressView>()
+            activity?.startActivity<ActivityGradientProgressView>()
         }
         swipeCards.onClick {
-            startActivity<ActivitySwipeCards>()
+            activity?.startActivity<ActivitySwipeCards>()
         }
         circleIndicator.onClick {
-            startActivity<ActivityCirclePageIndicator>()
+            activity?.startActivity<ActivityCirclePageIndicator>()
         }
         btnFocusView.onClick {
-            startActivity<ActivityFocusView>()
+            activity?.startActivity<ActivityFocusView>()
         }
         btnConflict.onClick {
-            startActivity<SlideConflictActivity>()
+            activity?.startActivity<SlideConflictActivity>()
         }
     }
 

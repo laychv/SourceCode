@@ -9,10 +9,11 @@ import android.graphics.Rect;
 import android.graphics.RectF;
 import android.graphics.Shader;
 import android.graphics.SweepGradient;
-import android.support.annotation.Nullable;
 import android.util.AttributeSet;
 import android.util.TypedValue;
 import android.view.View;
+
+import androidx.annotation.Nullable;
 
 public class GradientProgressView extends View {
 
@@ -104,7 +105,7 @@ public class GradientProgressView extends View {
         mTextPaint.getTextBounds(progressString, 0, progressString.length(), mTextBound);// 绘制中心的进度文本
         float x = mCx - mTextBound.width() / 2;
         float y = mCy + mTextBound.height() / 2;
-        canvas.drawText(progressString +"%", x, y, mTextPaint);
+        canvas.drawText(progressString + "%", x, y, mTextPaint);
     }
 
     /*    public void setProgress(int progress) {

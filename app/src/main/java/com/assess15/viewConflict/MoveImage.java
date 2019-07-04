@@ -4,6 +4,8 @@ import android.content.Context;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 
+import androidx.appcompat.widget.AppCompatImageView;
+
 import static com.assess15.utils.ScreenUtilsKt.getScreenHeight;
 import static com.assess15.utils.ScreenUtilsKt.getScreenWidth;
 
@@ -17,7 +19,7 @@ import static com.assess15.utils.ScreenUtilsKt.getScreenWidth;
  * 注： 滑动冲突，由父控件决定是否拦截
  * =====================================
  */
-public class MoveImage extends android.support.v7.widget.AppCompatImageView {
+public class MoveImage extends AppCompatImageView {
     private int lastX = 0;
     private int lastY = 0;
 

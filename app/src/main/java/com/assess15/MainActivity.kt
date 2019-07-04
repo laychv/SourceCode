@@ -1,7 +1,7 @@
 package com.assess15
 
-import android.support.annotation.IntRange
-import android.support.v4.app.Fragment
+import androidx.annotation.IntRange
+import androidx.fragment.app.Fragment
 import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ashokvarma.bottomnavigation.BottomNavigationItem
 import com.assess15.book.BookFragment

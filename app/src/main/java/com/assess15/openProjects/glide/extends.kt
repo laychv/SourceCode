@@ -1,6 +1,6 @@
-package com.assess15.openprojects.glide
+package com.assess15.openProjects.glide
 
-import android.app.Activity
+import androidx.appcompat.app.AppCompatActivity
 import android.content.Context
 import android.widget.ImageView
 import com.assess15.openProject.R
@@ -12,7 +12,7 @@ fun loadImageSimple(context: Context, url: String, target: ImageView) {
     Glide.with(context).load(url).into(target)
 }
 
-fun loadImage(activity: Activity, url: String, iv: ImageView) {
+fun loadImage(activity: AppCompatActivity, url: String, iv: ImageView) {
     Glide.with(activity)
             .load(url)
             .placeholder(R.mipmap.ic_launcher)

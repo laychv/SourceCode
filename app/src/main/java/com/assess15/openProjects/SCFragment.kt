@@ -14,7 +14,7 @@ import com.assess15.openProjects.retrofit.RetrofitActivity
 import com.assess15.openProjects.rx.rxbinding.ActivityRxBinding
 import com.assess15.openProjects.rx.rxjava2.RxJava2Activity
 import kotlinx.android.synthetic.main.fragment_sc.*
-import org.jetbrains.anko.support.v4.startActivity
+import org.jetbrains.anko.startActivity
 
 class SCFragment : BaseFragment() {
 
@@ -23,11 +23,11 @@ class SCFragment : BaseFragment() {
     }
 
     override fun initView() {
-        //Glide
+//        Glide
         glide.setOnClickListener {
-            startActivity(Intent(activity, GlideActivity::class.java))
+            activity?.startActivity<GlideActivity>()
         }
-        // Picasso
+//         Picasso
         picasso.setOnClickListener {
             startActivity(Intent(activity, PicassoActivity::class.java))
         }
@@ -49,15 +49,15 @@ class SCFragment : BaseFragment() {
         }
         // rxbinding
         rxbinding.onClick {
-            startActivity<ActivityRxBinding>()
+            activity?.startActivity<ActivityRxBinding>()
         }
         // Dagger2
         dagger2.setOnClickListener {
-            startActivity(Intent(activity, Dagger2Activity::class.java))
+            activity?.startActivity(Intent(activity, Dagger2Activity::class.java))
         }
-        // kotlin
+        kotlin
         kotlin.onClick {
-            startActivity<KotlinActivity>()
+            activity?.startActivity<KotlinActivity>()
         }
     }
 
