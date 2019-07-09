@@ -7,6 +7,7 @@
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
+        android:name="com.assess15.module_base.BaseApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
@@ -15,7 +16,7 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
 
-        <activity android:name="com.assess15.MainActivity">
+        <activity android:name="com.assess15.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,28 +24,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.assess15.openProjects.okHttp.OkHttpActivity" />
-        <activity android:name="com.assess15.openProjects.eventBus.EventBusActivity" />
-        <activity android:name="com.assess15.openProjects.retrofit.RetrofitActivity" />
-        <activity android:name="com.assess15.openProjects.glide.GlideActivity" />
-        <activity android:name="com.assess15.openProjects.picasso.PicassoActivity" />
-        <activity android:name="com.assess15.openProjects.rx.rxjava2.RxJava2Activity" />
-        <activity android:name="com.assess15.openProjects.dagger2.Dagger2Activity" />
-        <!--CustomView-->
-        <activity android:name="com.assess15.customView.barChart.BarChartActivity" />
-        <activity android:name="com.assess15.customView.lineChart.LineChartActivity" />
-        <activity android:name="com.assess15.customView.codeView.ActivityCodeView" />
-        <activity android:name="com.assess15.customView.curveView.CurveViewActivity" />
-        <activity android:name="com.assess15.customView.gradientProgressView.ActivityGradientProgressView" />
-        <activity android:name="com.assess15.customView.vg.ActivitySizeViewGroup" />
-        <activity android:name="com.assess15.openProjects.rx.rxbinding.ActivityRxBinding" />
-        <activity android:name="com.assess15.customView.swipeCards.ActivitySwipeCards" />
-        <activity android:name="com.assess15.customView.circlePageIndicator.ActivityCirclePageIndicator" />
-        <activity android:name="com.assess15.book.chapter2.ViewAnimationXML" />
-        <activity android:name="com.assess15.book.chapter2.ViewAnimationJAVA" />
-        <activity android:name="com.assess15.kotlin.KotlinActivity" />
-        <activity android:name="com.assess15.customView.focusView.ActivityFocusView" />
-        <activity android:name="com.assess15.viewConflict.SlideConflictActivity" />
+        <activity android:name="com.assess15.module_open_projects.kotlin.KotlinActivity" />
 
     </application>
 

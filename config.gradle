@@ -1,0 +1,61 @@
+ext {
+    android = [
+            compileSdkVersion  : 28,
+            applicationId      : "com.assess15.sc",
+            minSdkVersion      : 21,
+            targetSdkVersion   : 28,
+            versionCode        : 1,
+            versionName        : "1.0",
+
+            sourceCompatibility: JavaVersion.VERSION_1_8,
+            targetCompatibility: JavaVersion.VERSION_1_8
+    ]
+
+    dependencies = [
+            // androidx
+            cardview                : 'androidx.cardview:cardview:1.0.0',
+            material                : 'com.google.android.material:material:1.0.0',
+            appcompat               : 'androidx.appcompat:appcompat:1.0.2',
+            constraintlayout        : 'androidx.constraintlayout:constraintlayout:1.1.3',
+
+            // kotlin
+            kotlinStdlibJdk8        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
+//    api 'androidx.core:core-ktx:1.2.0-alpha02'
+            ankoCommons             : 'org.jetbrains.anko:anko-commons:0.10.8',
+            kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.2',
+//            kotlinxCoroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1",
+
+            // rx
+            okhttp3                 : 'com.squareup.okhttp3:okhttp:3.14.2',
+            eventbus3               : 'org.greenrobot:eventbus:3.1.1',
+            retrofit                : 'com.squareup.retrofit2:retrofit:2.5.0',
+            converterGson           : 'com.squareup.retrofit2:converter-gson:2.5.0',
+            adapterRxjava2          : 'com.squareup.retrofit2:adapter-rxjava2:2.5.0',
+            converterScalars        : 'com.squareup.retrofit2:converter-scalars:2.5.0',
+            //    api 'io.reactivex.rxjava2:rxjava:2.2.2'
+            rxandroid               : 'io.reactivex.rxjava2:rxandroid:2.1.1',
+            rxbinding               : 'com.jakewharton.rxbinding2:rxbinding:2.2.0', // include rxjava2
+
+            // dagger2
+            daggerCompiler          : 'com.google.dagger:dagger-compiler:2.21',
+            dagger                  : 'com.google.dagger:dagger:2.21',
+
+            // ARouter
+            arouterApi              : 'com.alibaba:arouter-api:1.5.0',
+            arouterCompiler         : 'com.alibaba:arouter-compiler:1.2.1',
+
+            // glide
+            glide3                  : 'com.github.bumptech.glide:glide:3.7.0',
+
+            // log
+            logger                  : 'com.orhanobut:logger:2.2.0',
+
+            // view
+            bottomNavigationBar     : 'com.ashokvarma.android:bottom-navigation-bar:2.1.0',
+            // permissions
+            rxpermissions           : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+
+    ]
+
+
+}
