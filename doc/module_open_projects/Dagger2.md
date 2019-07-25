@@ -8,9 +8,9 @@ Dagger2作用：通过编译时注解的方式，帮助我们自动生成创建�
 
 **注入方式(4种)**
 
-* 1. 接口方式
-* 2. set方式
-* 3. 构造方式
+* 1. 接口方式(demo1)
+* 2. set方式(demo2)
+* 3. 构造方式(demo3)
 * 4. 注解方式
 
 **注解：**
@@ -252,5 +252,7 @@ FAILURE: Build failed with an exception.
 - 解决：
     lateinit var mMouse: Mouse
 
+## Dagger.Android
+依赖注入(IOC)核心原则：一个类不应该知道自己是如何被注入的。
 
 

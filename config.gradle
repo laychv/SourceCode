@@ -22,8 +22,8 @@ ext {
             kotlinStdlibJdk8        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
 //    api 'androidx.core:core-ktx:1.2.0-alpha02'
             ankoCommons             : 'org.jetbrains.anko:anko-commons:0.10.8',
-            kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.2.2',
-//            kotlinxCoroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.1",
+            kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0-M2',
+            kotlinxCoroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0-M2",
 
             // rx
             okhttp3                 : 'com.squareup.okhttp3:okhttp:3.14.2',

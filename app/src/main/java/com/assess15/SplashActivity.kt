@@ -16,6 +16,7 @@ class SplashActivity : BaseActivity() {
     override fun initView() {
         btn.onClick {
             ARouter.getInstance().build(main_activity).navigation()
+            finish()
         }
     }
 

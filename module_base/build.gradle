@@ -51,6 +51,7 @@ dependencies {
     api dependencies.rxandroid
     api dependencies.rxbinding
     api dependencies.kotlinxCoroutinesAndroid
+    api dependencies.kotlinxCoroutines
 
     api dependencies.glide3
     api dependencies.logger
