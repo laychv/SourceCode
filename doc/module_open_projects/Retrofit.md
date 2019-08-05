@@ -1,10 +1,11 @@
 #### Retrofit2
 * 概述：App应用程序通过Retrofit请求网络，实际上是使用Retrofit接口层封装请求参数，之后由OkHttp完成后续的请求操作
 * 在服务端返回数据之后，OkHttp将原始的结果交给Retrofit，Retrofit根据用户的需求对结果进行解析
+* Retrofit封装了主线程和子线程的切换及网络数据的解析
 
 > 7步使用：
 
-  * 1.导入依赖:implementation 'com.squareup.retrofit2:retrofit:2.4.0'
+  * 1.导入依赖:implementation 'com.squareup.retrofit2:retrofit:2.4.0';implementation 'com.squareup.retrofit2:converter-gson:2.3.0'
   * 2.创建 接受服务器返回数据 实体类
   * 3.创建 用于描述网络请求接口 @GET()
   * 4.通过Builder创建网络请求实例
@@ -57,7 +58,7 @@ InvocationHandler
 #### 工厂设计模式 factory
 
 
-#### Build方法创建Retrofit
+#### Builder方法创建Retrofit
 
 * platform
 * callFactory
@@ -74,5 +75,35 @@ InvocationHandler
 
 
 #### 适配器模式
+
+
+---
+
+## 其他数据转换器
+Gson: com.squareup.retrofit2:converter-gson:x.x.x
+Jackson: com.squareup.retrofit2:converter-jackson:x.x.x
+Moshi: com.squareup.retrofit2:converter-moshi:x.x.x
+Protobuf: com.squareup.retrofit2:converter-protobuf:x.x.x
+Wire: com.squareup.retrofit2:converter-wire:x.x.x
+Simple: com.squareup.retrofit2:converter-simplexml:x.x.x
+Scalars(primitives,boxed,string): com.squareup.retrofit2:converter-scalars:x.x.x
+
+## Moshi解析json
+
+```
+// Retrofit
+implementation 'com.squareup.retrofit2:retrofit:2.5.0'
+implementation "com.squareup.retrofit2:converter-moshi:2.5.0"
+implementation "com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2"
+
+// Moshi
+implementation "com.squareup.moshi:moshi:1.8.0"
+kapt "com.squareup.moshi:moshi-kotlin-codegen:1.8.0"
+
+// Kotlin Coroutines
+implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.0.0'
+implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.0.0'
+
+```
 
 

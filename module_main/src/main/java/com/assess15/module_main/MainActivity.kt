@@ -4,10 +4,11 @@ import androidx.fragment.app.Fragment
 import com.alibaba.android.arouter.facade.annotation.Route
 import com.ashokvarma.bottomnavigation.BottomNavigationBar
 import com.ashokvarma.bottomnavigation.BottomNavigationItem
+import com.assess15.module_arch.ArchFragment
+import com.assess15.module_base.arouter.ARouterPath.module_main.Companion.main_activity
 import com.assess15.module_base.ui.BaseActivity
 import com.assess15.module_base.utils.FragmentUtils
 import com.assess15.module_open_projects.OpenProjectsFragment
-import com.assess15.module_base.arouter.ARouterPath.module_main.Companion.main_activity
 import kotlinx.android.synthetic.main.activity_main.*
 
 @Route(path = main_activity)
@@ -15,8 +16,8 @@ class MainActivity : BaseActivity() {
 
     private var selectIndex: Int = 0
     private var mOPFragment: OpenProjectsFragment? = null
-    //    private var mCVFragment: CVFragment? = null
-//    private var bookFragment: BookFragment? = null
+    private var mArchFragment: ArchFragment? = null
+    //    private var bookFragment: BookFragment? = null
     private var mCurrentFragment: Fragment? = null
 
     override fun getLayoutRes(): Int {
@@ -30,7 +31,7 @@ class MainActivity : BaseActivity() {
 
     private fun initBottomNavBar(@androidx.annotation.IntRange(from = 0, to = 2) position: Int) {
         bottom_navigation_bar.addItem(BottomNavigationItem(R.drawable.vector_drawable_sc, "OP"))
-//        bottom_navigation_bar.addItem(BottomNavigationItem(R.drawable.vector_drawable_cv, "CV"))
+        bottom_navigation_bar.addItem(BottomNavigationItem(R.drawable.vector_drawable_cv, "CV"))
 //        bottom_navigation_bar.addItem(BottomNavigationItem(R.drawable.vector_drawable_cv, "Book"))
         bottom_navigation_bar.setMode(BottomNavigationBar.MODE_FIXED)
         bottom_navigation_bar.activeColor = R.color.colorPrimary
@@ -61,12 +62,12 @@ class MainActivity : BaseActivity() {
                 }
                 mCurrentFragment = FragmentUtils.switchContent(supportFragmentManager, mCurrentFragment, mOPFragment, content.id, position.toLong(), false)
             }
-//            1 -> {
-//                if (mCVFragment == null) {
-//                    mCVFragment = CVFragment()
-//                }
-//                mCurrentFragment = FragmentUtils.switchContent(supportFragmentManager, mCurrentFragment, mCVFragment, content.id, position.toLong(), false)
-//            }
+            1 -> {
+                if (mArchFragment == null) {
+                    mArchFragment = ArchFragment()
+                }
+                mCurrentFragment = FragmentUtils.switchContent(supportFragmentManager, mCurrentFragment, mArchFragment, content.id, position.toLong(), false)
+            }
 //            2 -> {
 //                if (bookFragment == null) {
 //                    bookFragment = BookFragment()

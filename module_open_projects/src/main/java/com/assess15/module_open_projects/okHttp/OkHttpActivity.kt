@@ -16,22 +16,33 @@ class OkHttpActivity : BaseActivity() {
     }
 
     override fun initView() {
-        // sync
+        // get sync
         btnSync.setOnClickListener {
             syncRequest()
         }
 
-        // async
+        // get async
         btnAsync.setOnClickListener {
             asyncRequest()
         }
 
+        // post form
+        btnPostForm.setOnClickListener {
+            postForm()
+        }
+
+        // post json
+        btnPostJson.setOnClickListener {
+            postJson()
+        }
     }
 
     // dispatcher 1.创建客户端
     private val client = OkHttpClient.Builder()
             .cache(Cache(File("file"), 24 * 1024 * 1024))// 缓存
             .readTimeout(3, TimeUnit.SECONDS)
+            .writeTimeout(3, TimeUnit.SECONDS)
+//            .addInterceptor()
             .build()
 
     // 2.创建同步请求 阻塞线程
@@ -74,9 +85,47 @@ class OkHttpActivity : BaseActivity() {
             override fun onResponse(call: Call?, response: Response?) {//都在工作线程操作 如果更新UI切换到主线程中
 //                Logger.d(response?.body()?.string()) // crash
                 runOnUiThread {
+                    // string()只能调用一次，后续调用抛异常；因为调用完后关闭I/O流，并清空Buffer，目的就是防止无用的，多的I/O流操作
                     tvContent.text = response?.body()?.string()
+                    val byteStream = response?.body()?.byteStream()// 流的方式
                 }
             }
         })
     }
+
+    // post form
+    private fun postForm() {
+        // 1. 初始化client
+        val client = OkHttpClient()
+        // 2. 创建表单请求体，添加参数
+        val formBody = FormBody.Builder().add("search", "Uncle").build()
+        // 3. 创建POST请求
+        val request = Request.Builder().url("https://en.wikipedia.org/w/index.php")
+                .post(formBody)
+                .build()
+        // 4. 异步请求网络
+        client.newCall(request).enqueue(postCallback)
+    }
+
+    // post json
+    private fun postJson() {
+        val json = ""
+        val url = ""
+        val client = OkHttpClient()
+        val mediaType = MediaType.parse("application/json; charset=utf-8")
+        val requestBody = RequestBody.create(mediaType, json)
+        val request = Request.Builder().url(url).post(requestBody).build()
+        client.newCall(request).enqueue(postCallback)
+    }
+
+    private val postCallback: Callback = object : Callback {
+        override fun onFailure(call: Call, e: IOException) {}
+        override fun onResponse(call: Call, response: Response) {
+            val string = response.body()?.string()
+            runOnUiThread {
+                wv.loadData(string, "text/html", "utf-8")
+            }
+        }
+    }
+
 }

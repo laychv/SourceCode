@@ -8,19 +8,38 @@
         android:id="@+id/btnSync"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="同步请求" />
+        android:text="GET同步请求" />
 
     <Button
         android:id="@+id/btnAsync"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="异步请求" />
+        android:text="GET异步请求" />
+
+    <Button
+        android:id="@+id/btnPostForm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST提交表单" />
+
+    <Button
+        android:id="@+id/btnPostJson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="POST提交JSOn" />
 
     <TextView
         android:id="@+id/tvContent"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
         android:gravity="center"
         android:text="Hello World!" />
+
+    <WebView
+        android:id="@+id/wv"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.45" />
 
 </LinearLayout>
