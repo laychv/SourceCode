@@ -9,16 +9,19 @@ kapt {
     }
 }
 
-android {
-    def android = rootProject.ext.android
+def dep= rootProject.ext.dependencies
+def and = rootProject.ext.android
+def kap = rootProject.ext.kapts
 
-    compileSdkVersion android.compileSdkVersion
+android {
+    compileSdkVersion and.compileSdkVersion
+
     defaultConfig {
-        applicationId android.applicationId
-        minSdkVersion android.minSdkVersion
-        targetSdkVersion android.targetSdkVersion
-        versionCode android.versionCode
-        versionName android.versionName
+        applicationId and.applicationId
+        minSdkVersion and.minSdkVersion
+        targetSdkVersion and.targetSdkVersion
+        versionCode and.versionCode
+        versionName and.versionName
     }
     buildTypes {
         release {
@@ -27,14 +30,13 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility android.sourceCompatibility
-        targetCompatibility android.targetCompatibility
+        sourceCompatibility and.sourceCompatibility
+        targetCompatibility and.targetCompatibility
     }
 }
 
 dependencies {
     implementation project(':module_main')
 
-    def dependencies = rootProject.ext.dependencies
-    kapt dependencies.arouterCompiler
+    kapt kap.arouterCompiler
 }

@@ -9,15 +9,18 @@ kapt {
     }
 }
 
-android {
-    def android = rootProject.ext.android
+def dep = rootProject.ext.dependencies
+def and = rootProject.ext.android
+def kap = rootProject.ext.kapts
 
-    compileSdkVersion android.compileSdkVersion
+android {
+
+    compileSdkVersion and.compileSdkVersion
     defaultConfig {
-        minSdkVersion android.minSdkVersion
-        targetSdkVersion android.targetSdkVersion
-        versionCode android.versionCode
-        versionName android.versionName
+        minSdkVersion and.minSdkVersion
+        targetSdkVersion and.targetSdkVersion
+        versionCode and.versionCode
+        versionName and.versionName
     }
     buildTypes {
         release {
@@ -26,41 +29,17 @@ android {
         }
     }
     compileOptions {
-        sourceCompatibility android.sourceCompatibility
-        targetCompatibility android.targetCompatibility
+        sourceCompatibility and.sourceCompatibility
+        targetCompatibility and.targetCompatibility
     }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    def dependencies = rootProject.ext.dependencies
-    api dependencies.appcompat
-    api dependencies.constraintlayout
-    api dependencies.material
-    api dependencies.cardview
-    api dependencies.bottomNavigationBar
-    api dependencies.kotlinStdlibJdk8
-    api dependencies.ankoCommons
-    api dependencies.okhttp3
-    api dependencies.eventbus3
-    api dependencies.retrofit
-    api dependencies.converterGson
-    api dependencies.adapterRxjava2
-    api dependencies.converterScalars
-    api dependencies.rxandroid
-    api dependencies.rxbinding
-    api dependencies.kotlinxCoroutinesAndroid
-    api dependencies.kotlinxCoroutines
+    dep.each { k, v -> api v }
 
-    api dependencies.glide3
-    api dependencies.logger
-    api dependencies.rxpermissions
-
-    kapt dependencies.daggerCompiler
-    api dependencies.dagger
-
-    api dependencies.arouterApi
-    kapt dependencies.arouterCompiler
+    kapt kap.daggerCompiler
+    kapt kap.arouterCompiler
 
 }

@@ -32,3 +32,9 @@ MVP内存泄漏问题
 Presenter在Activity的onDestroy方法回调时执行资源释放操作，
 或者在Presenter引用View对象时使用更加容易回收的软引用，弱应用。
 
+Presenter持有了Activity或者Fragment的强引用，如果在请求结束之前Activity或者Fragment被销毁了，
+那么由于网络请求还没有返回，导致Presenter一直持有Activity或者Fragment的对象，使得Activity或者Fragment对象无法回收，此时就发生了内存泄露
+
+MVP解决内存泄漏解决
+- 通过RxLifecycle，绑定Activity/Fragment生命周期
+- Presenter对这个View持有弱引用。通常情况下这个View类型应该是实现了某个特定接口的Activity或者Fragment等类型。
