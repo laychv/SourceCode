@@ -20,16 +20,20 @@ ext {
 
             // kotlin
             kotlinStdlibJdk8        : "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlin_version",
-//    api 'androidx.core:core-ktx:1.2.0-alpha02'
+            ktx                     : 'androidx.core:core-ktx:1.2.0-alpha02',
             ankoCommons             : 'org.jetbrains.anko:anko-commons:0.10.8',
+
+            // coroutines
             kotlinxCoroutinesAndroid: 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.0-M2',
             kotlinxCoroutines       : "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.3.0-M2",
 
             // rx
             okhttp3                 : 'com.squareup.okhttp3:okhttp:3.14.2',
-            eventbus3               : 'org.greenrobot:eventbus:3.1.1',
             retrofit                : 'com.squareup.retrofit2:retrofit:2.5.0',
+            // adapter
             adapterRxjava2          : 'com.squareup.retrofit2:adapter-rxjava2:2.5.0',
+//            adapterCoroutines       : 'com.jakewharton.retrofit:retrofit2-kotlin-coroutines-adapter:0.9.2',
+            // converter
             converterGson           : 'com.squareup.retrofit2:converter-gson:2.5.0',
             converterScalars        : 'com.squareup.retrofit2:converter-scalars:2.5.0',
             converterMoshi          : "com.squareup.retrofit2:converter-moshi:2.0.2",
@@ -44,20 +48,21 @@ ext {
 
             // dagger2
             dagger                  : 'com.google.dagger:dagger:2.21',
-
             // ARouter
             arouterApi              : 'com.alibaba:arouter-api:1.5.0',
-
+            // wmrouter
+//            wmRouter                : 'com.sankuai.waimai.router:router:1.x',
             // glide
             glide3                  : 'com.github.bumptech.glide:glide:3.7.0',
-
             // log
             logger                  : 'com.orhanobut:logger:2.2.0',
-
             // view
             bottomNavigationBar     : 'com.ashokvarma.android:bottom-navigation-bar:2.1.0',
             // permissions
-            rxpermissions           : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar'
+            rxpermissions           : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
+            // eventbus
+            eventbus3               : 'org.greenrobot:eventbus:3.1.1',
+
     ]
 
     kapts = [
@@ -65,6 +70,8 @@ ext {
             moshiKotlinCodegen: "com.squareup.moshi:moshi-kotlin-codegen:1.8.0",
             // arouter
             arouterCompiler   : 'com.alibaba:arouter-compiler:1.2.1',
+            // wmrouter
+//            wmRouterCompiler  : 'com.sankuai.waimai.router:compiler:1.x',
             // dagger
             daggerCompiler    : 'com.google.dagger:dagger-compiler:2.21',
     ]

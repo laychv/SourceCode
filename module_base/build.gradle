@@ -35,8 +35,6 @@ android {
 }
 
 dependencies {
-    implementation fileTree(dir: 'libs', include: ['*.jar'])
-
     dep.each { k, v -> api v }
 
     kapt kap.daggerCompiler
