@@ -10,5 +10,6 @@
         <activity android:name="com.assess15.module_open_projects.rx.rxjava2.RxJava2Activity" />
         <activity android:name="com.assess15.module_open_projects.rx.rxbinding.ActivityRxBinding" />
         <activity android:name=".dagger2.Dagger2Activity" />
+        <activity android:name=".dagger2Android.Dagger2AndroidActivity" />
     </application>
 </manifest>

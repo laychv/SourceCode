@@ -4,6 +4,7 @@ import android.content.Intent
 import com.assess15.module_base.comm.onClick
 import com.assess15.module_base.ui.BaseFragment
 import com.assess15.module_open_projects.dagger2.Dagger2Activity
+import com.assess15.module_open_projects.dagger2Android.Dagger2AndroidActivity
 import com.assess15.module_open_projects.eventBus.EventBusActivity
 import com.assess15.module_open_projects.glide.GlideActivity
 import com.assess15.module_open_projects.kotlin.KotlinActivity
@@ -53,6 +54,9 @@ class OpenProjectsFragment : BaseFragment() {
         // Dagger2
         dagger2.setOnClickListener {
             activity?.startActivity(Intent(activity, Dagger2Activity::class.java))
+        }
+        dagger2Android.onClick {
+            startActivity(Intent(activity, Dagger2AndroidActivity::class.java))
         }
         kotlin
         kotlin.onClick {

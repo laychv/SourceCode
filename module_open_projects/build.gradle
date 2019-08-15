@@ -40,4 +40,7 @@ dependencies {
     kapt kap.arouterCompiler
     kapt kap.daggerCompiler
     kapt kap.moshiKotlinCodegen
+
+//    kapt kap.daggerAndroidCompiler
+    annotationProcessor kap.daggerAndroidCompiler
 }

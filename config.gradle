@@ -48,6 +48,8 @@ ext {
 
             // dagger2
             dagger                  : 'com.google.dagger:dagger:2.21',
+            daggerAndroid           : 'com.google.dagger:dagger-android:2.17',
+            daggerAndroidSupport    : 'com.google.dagger:dagger-android-support:2.17',
             // ARouter
             arouterApi              : 'com.alibaba:arouter-api:1.5.0',
             // wmrouter
@@ -67,12 +69,13 @@ ext {
 
     kapts = [
             // moshi
-            moshiKotlinCodegen: "com.squareup.moshi:moshi-kotlin-codegen:1.8.0",
+            moshiKotlinCodegen   : "com.squareup.moshi:moshi-kotlin-codegen:1.8.0",
             // arouter
-            arouterCompiler   : 'com.alibaba:arouter-compiler:1.2.1',
+            arouterCompiler      : 'com.alibaba:arouter-compiler:1.2.1',
             // wmrouter
 //            wmRouterCompiler  : 'com.sankuai.waimai.router:compiler:1.x',
             // dagger
-            daggerCompiler    : 'com.google.dagger:dagger-compiler:2.21',
+            daggerCompiler       : 'com.google.dagger:dagger-compiler:2.21',
+            daggerAndroidCompiler: 'com.google.dagger:dagger-android-processor:2.17'
     ]
 }

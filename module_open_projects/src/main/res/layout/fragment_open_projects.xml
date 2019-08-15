@@ -47,6 +47,13 @@
         android:textAllCaps="false" />
 
     <Button
+        android:id="@+id/dagger2Android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dagger2Android"
+        android:textAllCaps="false" />
+
+    <Button
         android:id="@+id/rxjava2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
