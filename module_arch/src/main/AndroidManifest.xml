@@ -4,5 +4,9 @@
     <application>
         <activity android:name=".mvp.demo1.BookActivity" />
         <activity android:name=".mvc.view.BookActivity" />
+        <activity android:name=".aop.click.ClickActivity" />
+        <activity android:name=".aop.AOPActivity" />
+        <activity android:name=".aop.login.LoginActivity" />
+        <activity android:name=".aop.login.OtherActivity" />
     </application>
 </manifest>

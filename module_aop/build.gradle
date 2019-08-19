@@ -2,6 +2,7 @@ apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.hujiang.android-aspectjx'
 
 kapt {
     arguments {
@@ -14,7 +15,6 @@ def and = rootProject.ext.android
 def kap = rootProject.ext.kapts
 
 android {
-
     compileSdkVersion and.compileSdkVersion
     defaultConfig {
         minSdkVersion and.minSdkVersion
@@ -36,8 +36,9 @@ android {
 
 dependencies {
     api project(':module_base')
-    api project(':module_aop')
 
     kapt kap.arouterCompiler
     kapt kap.daggerCompiler
+    // 有plugin，可以不用下面的依赖
+//    api 'org.aspectj:aspectjrt:1.8.13'
 }

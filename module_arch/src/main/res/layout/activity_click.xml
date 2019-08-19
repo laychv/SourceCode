@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvNormal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        tools:text="测试tools会不会显示,编辑期间有效，运行后无效" />
+
+    <TextView
+        android:id="@+id/tvSingle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        tools:text="测试多次点击" />
+
+    <Button
+        android:id="@+id/btnClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="点击测试" />
+</LinearLayout>

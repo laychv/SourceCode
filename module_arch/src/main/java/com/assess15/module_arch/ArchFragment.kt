@@ -1,5 +1,6 @@
 package com.assess15.module_arch
 
+import com.assess15.module_arch.aop.AOPActivity
 import com.assess15.module_arch.mvc.view.BookActivity
 import com.assess15.module_base.ui.BaseFragment
 import kotlinx.android.synthetic.main.activity_arch.*
@@ -19,6 +20,9 @@ class ArchFragment : BaseFragment() {
         }
         btnMVVM.setOnClickListener {
             //              activity?.startActivity<>()
+        }
+        btnAOP.setOnClickListener {
+            activity?.startActivity<AOPActivity>()
         }
     }
 
