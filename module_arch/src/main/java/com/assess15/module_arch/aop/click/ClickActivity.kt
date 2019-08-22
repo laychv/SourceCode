@@ -1,6 +1,6 @@
 package com.assess15.module_arch.aop.click
 
-import com.assess15.module_aop.clickAspect.SingleClick
+import com.assess15.module_aop.click.AopOnclick
 import com.assess15.module_arch.R
 import com.assess15.module_base.ui.BaseActivity
 import kotlinx.android.synthetic.main.activity_click.*
@@ -28,7 +28,8 @@ class ClickActivity : BaseActivity() {
         tvNormal.text = "正常情况下${normalSum++}"
     }
 
-    @SingleClick
+//    @SingleClick
+    @AopOnclick(2000)
     fun single() {
         tvSingle.text = "多次点击下${singleSum++}"
     }

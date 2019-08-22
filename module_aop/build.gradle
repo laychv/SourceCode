@@ -39,6 +39,4 @@ dependencies {
 
     kapt kap.arouterCompiler
     kapt kap.daggerCompiler
-    // 有plugin，可以不用下面的依赖
-//    api 'org.aspectj:aspectjrt:1.8.13'
 }

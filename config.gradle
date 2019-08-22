@@ -64,7 +64,8 @@ ext {
             rxpermissions           : 'com.tbruyelle.rxpermissions2:rxpermissions:0.9.5@aar',
             // eventbus
             eventbus3               : 'org.greenrobot:eventbus:3.1.1',
-
+            // aspectj
+            aspectj                 : 'org.aspectj:aspectjrt:1.8.13'
     ]
 
     kapts = [
@@ -76,6 +77,7 @@ ext {
 //            wmRouterCompiler  : 'com.sankuai.waimai.router:compiler:1.x',
             // dagger
             daggerCompiler       : 'com.google.dagger:dagger-compiler:2.21',
-            daggerAndroidCompiler: 'com.google.dagger:dagger-android-processor:2.17'
+            daggerAndroidCompiler: 'com.google.dagger:dagger-android-processor:2.17',
+            eventbusProcessor    : 'org.greenrobot:eventbus-annotation-processor:3.1.1'
     ]
 }

@@ -36,7 +36,11 @@ android {
 }
 
 dependencies {
-    implementation project(':module_main')
+    api project(':module_aop')
+    api project(':module_arch')
+    api project(':module_main')
+    api project(':module_base')
+    api project(':module_open_projects')
 
     kapt kap.arouterCompiler
 }

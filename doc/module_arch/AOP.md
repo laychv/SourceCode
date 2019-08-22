@@ -2,6 +2,10 @@
 https://blog.csdn.net/EthanCo/article/details/87938487
 https://github.com/HujiangTechnology/gradle_plugin_android_aspectjx
 
+注意：
+模块化/组件化中
+如果跳转/跨模块无法调取，检查模块依赖关系
+
 # AspectJ无效
 
 配置
