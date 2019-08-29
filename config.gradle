@@ -65,7 +65,7 @@ ext {
             // eventbus
             eventbus3               : 'org.greenrobot:eventbus:3.1.1',
             // aspectj
-            aspectj                 : 'org.aspectj:aspectjrt:1.8.13'
+            aspectj                 : 'org.aspectj:aspectjrt:1.8.13',
     ]
 
     kapts = [
@@ -79,5 +79,12 @@ ext {
             daggerCompiler       : 'com.google.dagger:dagger-compiler:2.21',
             daggerAndroidCompiler: 'com.google.dagger:dagger-android-processor:2.17',
             eventbusProcessor    : 'org.greenrobot:eventbus-annotation-processor:3.1.1'
+    ]
+
+    module_optimization = [
+            //AndroidPerformanceMonitor
+            blockcanary: 'com.github.markzhai:blockcanary-android:1.5.0',
+            // anr watch dog
+            anrwatchdog:'com.github.anrwatchdog:anrwatchdog:1.4.0'
     ]
 }

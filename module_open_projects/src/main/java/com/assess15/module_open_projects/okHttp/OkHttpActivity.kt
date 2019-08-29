@@ -43,6 +43,8 @@ class OkHttpActivity : BaseActivity() {
             .readTimeout(3, TimeUnit.SECONDS)
             .writeTimeout(3, TimeUnit.SECONDS)
 //            .addInterceptor()
+//            .dns()
+//            .eventListener()
             .build()
 
     // 2.创建同步请求 阻塞线程

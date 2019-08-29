@@ -1,4 +1,4 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
@@ -9,26 +9,27 @@ kapt {
     }
 }
 
-def dep= rootProject.ext.dependencies
-def and = rootProject.ext.android
+def dep = rootProject.ext.module_optimization
 def kap = rootProject.ext.kapts
+def and = rootProject.ext.android
 
 android {
     compileSdkVersion and.compileSdkVersion
 
     defaultConfig {
-        applicationId and.applicationId
         minSdkVersion and.minSdkVersion
         targetSdkVersion and.targetSdkVersion
         versionCode and.versionCode
         versionName and.versionName
     }
+
     buildTypes {
         release {
             minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+
     compileOptions {
         sourceCompatibility and.sourceCompatibility
         targetCompatibility and.targetCompatibility
@@ -36,12 +37,16 @@ android {
 }
 
 dependencies {
-    api project(':module_aop')
-    api project(':module_arch')
-    api project(':module_main')
     api project(':module_base')
-    api project(':module_open_projects')
-    api project(':module_optimization')
+
+    dep.each { k, v -> api v }
 
     kapt kap.arouterCompiler
+    kapt kap.daggerCompiler
+    kapt kap.moshiKotlinCodegen
+
+//    kapt kap.daggerAndroidCompiler
+    annotationProcessor kap.daggerAndroidCompiler
+
+    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta03'
 }

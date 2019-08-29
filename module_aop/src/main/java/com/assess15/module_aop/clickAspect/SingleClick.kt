@@ -1,11 +1,6 @@
 package com.assess15.module_aop.clickAspect
 
 /**
- * AnnotationRetention.SOURCE：不存储在编译后的 Class 文件。
- * AnnotationRetention.BINARY：存储在编译后的 Class 文件，但是反射不可见。
- * AnnotationRetention.RUNTIME：存储在编译后的 Class 文件，反射可见。
- */
-/**
  * AnnotationTarget.CLASS：类，接口或对象，注解类也包括在内。
  * AnnotationTarget.ANNOTATION_CLASS：只有注解类。
  * AnnotationTarget.TYPE_PARAMETER：Generic type parameter (unsupported yet)通用类型参数（还不支持）。
@@ -23,5 +18,10 @@ package com.assess15.module_aop.clickAspect
  * AnnotationTarget.TYPEALIAS：@SinceKotlin("1.1") 类型别名，Kotlin1.1已可用。
  */
 @Target(AnnotationTarget.FUNCTION)
+/**
+ * AnnotationRetention.SOURCE：不存储在编译后的 Class 文件。
+ * AnnotationRetention.BINARY：存储在编译后的 Class 文件，但是反射不可见。
+ * AnnotationRetention.RUNTIME：存储在编译后的 Class 文件，反射可见。
+ */
 @Retention(AnnotationRetention.RUNTIME)
 annotation class SingleClick
