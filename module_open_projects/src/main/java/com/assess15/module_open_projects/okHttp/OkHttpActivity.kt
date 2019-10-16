@@ -66,7 +66,7 @@ class OkHttpActivity : BaseActivity() {
 
             object : Thread() {
                 override fun run() {
-                    val response = call.execute()// 同步请求会阻塞主线,程抛异常： networkonmainthreadexception
+                    val response = call.execute()// 同步请求会阻塞主线程抛异常： networkonmainthreadexception
                     Logger.d(response.body()?.string())
                 }
             }.start()
