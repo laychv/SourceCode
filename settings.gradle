@@ -1,1 +1,10 @@
-include ':app', ':module_base', ':module_open_projects', ':module_main', ':module_arch', ':module_aop', ':module_optimization'
+//include ':module_dagger2android'
+include ':app'
+include ':module_base'
+include ':module_open_projects'
+include ':module_main'
+include ':module_arch'
+include ':module_aop'
+include ':module_optimization'
+
+rootProject.name = "SourceCode"

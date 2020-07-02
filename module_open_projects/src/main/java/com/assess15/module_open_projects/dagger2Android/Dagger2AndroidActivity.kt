@@ -3,7 +3,7 @@ package com.assess15.module_open_projects.dagger2Android
 import com.assess15.module_base.comm.onClick
 import com.assess15.module_base.ui.BaseActivity
 import com.assess15.module_open_projects.R
-import com.assess15.module_open_projects.dagger2Android.demo1.MainActivity
+import com.assess15.module_open_projects.dagger2Android.demo1.DaggerAndroidActivity
 import kotlinx.android.synthetic.main.activity_dagger2_android.*
 import org.jetbrains.anko.startActivity
 
@@ -18,7 +18,7 @@ class Dagger2AndroidActivity : BaseActivity() {
 
     override fun initView() {
         btn1.onClick {
-            startActivity<MainActivity>()
+            startActivity<DaggerAndroidActivity>()
         }
         btn2.onClick {
 

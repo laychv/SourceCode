@@ -1,7 +1,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.assess15.module_open_projects">
 
-    <application>
+    <application android:name=".dagger2Android.demo1.DemoApplication">
         <activity android:name="com.assess15.module_open_projects.okHttp.OkHttpActivity" />
         <activity android:name="com.assess15.module_open_projects.eventBus.EventBusActivity" />
         <activity android:name="com.assess15.module_open_projects.retrofit.RetrofitActivity" />
@@ -11,5 +11,6 @@
         <activity android:name="com.assess15.module_open_projects.rx.rxbinding.ActivityRxBinding" />
         <activity android:name=".dagger2.Dagger2Activity" />
         <activity android:name=".dagger2Android.Dagger2AndroidActivity" />
+        <activity android:name=".dagger2Android.demo1.DaggerAndroidActivity" />
     </application>
 </manifest>

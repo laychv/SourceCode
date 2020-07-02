@@ -48,5 +48,5 @@ dependencies {
 //    kapt kap.daggerAndroidCompiler
     annotationProcessor kap.daggerAndroidCompiler
 
-    implementation 'androidx.viewpager2:viewpager2:1.0.0-beta03'
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
 }

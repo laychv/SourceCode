@@ -5,7 +5,7 @@ import com.assess15.module_base.ui.BaseActivity
 import com.assess15.module_open_projects.R
 import dagger.android.AndroidInjection
 
-class MainActivity : BaseActivity() {
+class DaggerAndroidActivity : BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         AndroidInjection.inject(this)
