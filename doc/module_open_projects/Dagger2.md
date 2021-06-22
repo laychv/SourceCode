@@ -211,11 +211,11 @@ annotation class ActivityQualifier
 - 注解迷失 demo7
 
 ```
-e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/src/main/java/com/assess15/openProjects/dagger2/demo7/ComputerComponent.java:7: 错误: com.assess15.openProjects.dagger2.demo7.Mouse is bound multiple times:
+e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/src/main/java/com/laychv/openProjects/dagger2/demo7/ComputerComponent.java:7: 错误: com.laychv.openProjects.dagger2.demo7.Mouse is bound multiple times:
     void inject(Computer computer);
          ^
-      @Provides com.assess15.openProjects.dagger2.demo7.Mouse com.assess15.openProjects.dagger2.demo7.MouseModule.ProvidesWireMouse()
-      @Provides com.assess15.openProjects.dagger2.demo7.Mouse com.assess15.openProjects.dagger2.demo7.MouseModule.ProdidesWirelessMouse()
+      @Provides com.laychv.openProjects.dagger2.demo7.Mouse com.laychv.openProjects.dagger2.demo7.MouseModule.ProvidesWireMouse()
+      @Provides com.laychv.openProjects.dagger2.demo7.Mouse com.laychv.openProjects.dagger2.demo7.MouseModule.ProdidesWirelessMouse()
 
 FAILURE: Build failed with an exception.
 ```
@@ -237,14 +237,14 @@ FAILURE: Build failed with an exception.
 - demo10 在Kotlin中使用 注意：kotlin中使用遇到的坑
 
 ```
-e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/build/tmp/kapt3/stubs/debug/com/assess15/openProjects/dagger2/demo10/Computer.java:14: 错误: Dagger does not support injection into private fields
-    private com.assess15.module_open_projects.dagger2.demo10.Mouse mMouse;
+e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/build/tmp/kapt3/stubs/debug/com/laychv/openProjects/dagger2/demo10/Computer.java:14: 错误: Dagger does not support injection into private fields
+    private com.laychv.module_open_projects.dagger2.demo10.Mouse mMouse;
                                                            ^
-e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/build/tmp/kapt3/stubs/debug/com/assess15/openProjects/dagger2/demo10/ComputerComponent.java:9: 错误: com.assess15.module_open_projects.dagger2.demo10.Computer cannot be provided without an @Inject constructor or from an @Provides-annotated method.
+e: /Users/ProjectsAndroidStudio/GitHub/SourceCode/app/build/tmp/kapt3/stubs/debug/com/laychv/openProjects/dagger2/demo10/ComputerComponent.java:9: 错误: com.laychv.module_open_projects.dagger2.demo10.Computer cannot be provided without an @Inject constructor or from an @Provides-annotated method.
     public abstract void inject(@org.jetbrains.annotations.NotNull()
                          ^
-      com.assess15.module_open_projects.dagger2.demo10.Computer is injected at
-          com.assess15.module_open_projects.dagger2.demo10.ComputerComponent.inject(computer)
+      com.laychv.module_open_projects.dagger2.demo10.Computer is injected at
+          com.laychv.module_open_projects.dagger2.demo10.ComputerComponent.inject(computer)
 
 FAILURE: Build failed with an exception.
 ```

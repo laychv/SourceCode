@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.assess15.openProject">
+    package="com.laychv.openProject">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.CAMERA" />
 
     <application
-        android:name="com.assess15.module_base.BaseApplication"
+        android:name="com.laychv.module_base.BaseApplication"
         android:allowBackup="false"
         android:hardwareAccelerated="false"
         android:icon="@mipmap/ic_launcher"
@@ -17,7 +17,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:replace="android:name">
 
-        <activity android:name="com.assess15.SplashActivity">
+        <activity android:name="com.laychv.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,7 +25,7 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.assess15.module_open_projects.kotlin.KotlinActivity" />
+        <activity android:name="com.laychv.module_open_projects.kotlin.KotlinActivity" />
 
     </application>
 

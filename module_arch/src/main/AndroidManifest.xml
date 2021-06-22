@@ -1,12 +1,12 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.assess15.module_arch">
+    package="com.laychv.module_arch">
 
     <application>
-        <activity android:name=".mvp.demo1.BookActivity" />
-        <activity android:name=".mvc.view.BookActivity" />
-        <activity android:name=".aop.click.ClickActivity" />
-        <activity android:name=".aop.AOPActivity" />
-        <activity android:name=".aop.login.LoginActivity" />
-        <activity android:name=".aop.login.OtherActivity" />
+        <activity android:name="com.laychv.module_arch.mvp.demo1.BookActivity" />
+        <activity android:name="com.laychv.module_arch.mvc.view.BookActivity" />
+        <activity android:name="com.laychv.module_arch.aop.click.ClickActivity" />
+        <activity android:name="com.laychv.module_arch.aop.AOPActivity" />
+        <activity android:name="com.laychv.module_arch.aop.login.LoginActivity" />
+        <activity android:name="com.laychv.module_arch.aop.login.OtherActivity" />
     </application>
 </manifest>
