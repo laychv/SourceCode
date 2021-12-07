@@ -1,4 +1,3 @@
-//include ':module_dagger2android'
 include ':app'
 include ':module_base'
 include ':module_open_projects'
@@ -6,5 +5,17 @@ include ':module_main'
 include ':module_arch'
 include ':module_aop'
 include ':module_optimization'
+
+include ':Android_AMS'
+include ':Android_DesignPattern'
+include ':Android_Handler'
+include ':Android_Plugin_Host'
+include ':Android_Plugin_Standard'
+include ':Android_Plugin_Plugin'
+
+include ':Open_EventBus'
+include ':Open_EventBus_Annotation'
+include ':Open_EventBus_Compiler'
+include ':Open_EventBus_lib'
 
 rootProject.name = "SourceCode"

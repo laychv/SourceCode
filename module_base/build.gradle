@@ -16,18 +16,13 @@ def kap = rootProject.ext.kapts
 android {
 
     compileSdkVersion and.compileSdkVersion
+    buildToolsVersion and.buildToolsVersion
+
     defaultConfig {
         minSdkVersion and.minSdkVersion
         targetSdkVersion and.targetSdkVersion
-        versionCode and.versionCode
-        versionName and.versionName
     }
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
+
     compileOptions {
         sourceCompatibility and.sourceCompatibility
         targetCompatibility and.targetCompatibility
@@ -39,5 +34,4 @@ dependencies {
 
     kapt kap.daggerCompiler
     kapt kap.arouterCompiler
-
 }

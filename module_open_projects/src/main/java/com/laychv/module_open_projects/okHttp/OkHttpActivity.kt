@@ -125,7 +125,7 @@ class OkHttpActivity : BaseActivity() {
         override fun onResponse(call: Call, response: Response) {
             val string = response.body()?.string()
             runOnUiThread {
-                wv.loadData(string, "text/html", "utf-8")
+                wv.loadData(string!!, "text/html", "utf-8")
             }
         }
     }
